@@ -275,8 +275,24 @@ public class kablaze {
 		}
 		System.out.print(name + ": Yea, ofcourse! My ID is: ");
 		String discord = scan.nextLine();
+		Sleep.main(1000);
+		switch (discord.toLowerCase()) {
+			case "cmyui#5585":
+				System.out.println("JoSHS: JSIH ahh H hAhAha  HAh hAHA h AHHaa H a HAHA aaH a AHhAhA HAAH\nhAhAHAHaH AHAH AH HAAH HA HAhAha hahahA h hAh HA Hh H AHah HAh AHAhA HAhAHAH h\nH AA HhAh AHa hausihsa FHAU IH Fauf A FH AH HA hA hh hAfiueiwuf hih\nisuhfeiufesauiefuygehsfbufheaufUYGAEYUGFyeugfeUYFBFuYBfbaYUYFSUDBYFWB\nFUIHRFUFahYfyGFyGFuyfgsdfUYBSFysufbsybFBSFBby\nNo.");
+				System.exit(0);
+				break;
+			case "kahri#9828": case "Emily | Sunpy#5213": case "Hanyeol 한열#8257":
+			case "Kip#1120": case "Frosti#0602": case "ninjin#3198": case "Howl#0940":
+				System.out.println("Huh.. That sounds oddly familliar..");
+				Sleep.main(1600);
+				System.out.println("Josh: well, whatever.");
+				break;
+			default:
+				System.out.println("Josh: Alright cool!");
+				break;
+		}
 		Sleep.main(600);
-		System.out.println("Josh: Awesome. I'll make sure to add you when I get on!");
+		System.out.println("Josh: I'll make sure to add you when I get on!");
 		//Unfinished
 		}
 	}
