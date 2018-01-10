@@ -260,7 +260,22 @@ public class kablaze {
 			Sleep.main(200);
 			System.exit(0);
 		}
-
+		Sleep.main(600);
+		System.out.println("Josh: Anyways, I've got to go home.. Do you use discord by any chance?");
+		String haveDiscord = scan.nextLine();
+		if ("y".equalsIgnoreCase(haveDiscord.charAt(0))) {
+			System.out.println(name + ": " + haveDiscord + "!");
+			Sleep.main(600);
+			System.out.println("Josh: Oh sweet, whats your ID? Mine is cmyui#5585.");
+			Sleep.main(850);
+			System.out.print(name + ": Mine is: ");
+			String discord = scan.nextLine();
+		}
+		System.out.print(name + ": Yea, ofcourse! My ID is: ");
+		String discord = scan.nextLine();
+		Sleep.main(600);
+		System.out.println("Josh: Awesome. I'll make sure to add you when I get on!");
+		//Unfinished
 		}
 	}
 }
