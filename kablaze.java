@@ -1,12 +1,10 @@
-package javaapplication1;
+package kablazegame;
 import java.util.Scanner;
 
 /*
 * Author: cmyui#5585 // https://akatsuki.pw
-* Hey! Welcome to my first ever Java game. It's probably going to suck, and it's literally just text.
-* But I'm proud of it so far lmfao. It's supposed to be some sort of little game to see how far you
-* can get before the game closes on you. Try not to look at the source code too much, and try to pretend
-* you're me so you can predict the answers :^)
+* Hey! Honestly I have no idea what im doing here but it's just something im doing to learn java. It's pretty cringy and thats basically the goal of it.
+* Enjoy getting as far as you can before the game ends on you :^)
 */
 
 public class kablaze {
@@ -14,7 +12,6 @@ public class kablaze {
 		Scanner scan = new Scanner(System.in);
 		String playOsuString, akatsuki, interesting;
 		int careAmt;
-		boolean playOsu;
 
 		System.out.println("??: Hey dude! Nice to meet you! I'm Josh, what's your name?");
 		String name = scan.nextLine();
@@ -34,7 +31,6 @@ public class kablaze {
 			System.out.println(name + ": " + playOsuString + ".");
 			Sleep.main(200);
 			System.out.println("Josh: Oh dude, sweet! Finally another person that plays osu!");
-			playOsu = true;
 		} else {
 			System.out.println(name + ": " + playOsuString + ".");
 			Sleep.main(200);
@@ -44,6 +40,7 @@ public class kablaze {
 			Sleep.main(1600);
 			System.exit(0);
 		}
+		Sleep.main(1500);
 		System.out.println("Josh: Ahh dude I forgot.. Could you̢̨̢̨̮̹̤͍̫̤̲̞̥̖̰͔̤̘̺͙͚̪̠̺̫͜͜ͅ tell me what kablaze's current osu! rank is?");
 		int number = scan.nextInt();
 		System.out.println(name + " " + number + ".");
