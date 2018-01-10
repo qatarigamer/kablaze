@@ -1,3 +1,4 @@
+package javaapplication1;
 import java.util.Scanner;
 
 /*
@@ -29,7 +30,7 @@ public class kablaze {
 		System.out.println("Josh: Do you play osu?");
 		playOsuString = scan.nextLine();
 
-		if ("y".equalsIgnoreCase(playOsuString.charAt(0))) {
+		if ("y".equalsIgnoreCase(playOsuString.substring(0, 1))) {
 			System.out.println(name + ": " + playOsuString + ".");
 			Sleep.main(200);
 			System.out.println("Josh: Oh dude, sweet! Finally another person that plays osu!");
@@ -118,7 +119,7 @@ public class kablaze {
 			Sleep.main(80);
 			System.out.println("jalapeÃ±o: L E A V E");
 			Sleep.main(20);
-			int count = 0; 
+			int count = 0;
 			while (count < 20) {
 				System.out.println("�J ௸�    O �୰�Shs: G ௵  �Ã³k߶E T    O� U҂T.   ���   .");
 				count++;
@@ -147,7 +148,7 @@ public class kablaze {
 		Sleep.main(600);
 		akatsuki = scan.nextLine();
 
-		if ("y".equalsIgnoreCase(akatsuki.charAt(0))) {
+		if ("y".equalsIgnoreCase(akatsuki.substring(0, 1))) {
 			System.out.println(name + ": " + akatsuki + ".");
 			Sleep.main(200);
 			System.out.println("Josh: Yea.. It's been getting quite a lot of attention recently..");
@@ -176,7 +177,7 @@ public class kablaze {
 		System.out.println("Have you done anything interesting recently?");
 		interesting = scan.nextLine();
 
-		if ("y".equalsIgnoreCase(interesting.charAt(0))) {
+		if ("y".equalsIgnoreCase(interesting.substring(0, 1))) {
 			System.out.println(name + ": " + interesting + ".");
 			Sleep.main(400);
 			System.out.println("Oh dude, tell me about it!");
@@ -210,7 +211,7 @@ public class kablaze {
 		System.out.println("Josh: So.. Out of curiousity, are you any good at osu..? What's your rank?");
 		int rank = scan.nextInt();
 
-		if (rank => 100000) {
+		if (rank >= 100000) {
 			System.out.println(name + ": " + rank + ".");
 			Sleep.main(400);
 			System.out.println("Josh: Oh, so you're still pretty new to the game then!");
@@ -253,6 +254,7 @@ public class kablaze {
 		} else {
 			System.out.println(name + ": " + rank + ".");
 			Sleep.main(400);
+			int count = 0;
 			while (count < 100) {
 				System.out.println("Jo࿊hs�h: loO  Le h�e SDlo i am   coo   kiez i xDD℻DS�႟DDSD��᥀᥀℆℆℆D");
 				count++;
@@ -263,7 +265,7 @@ public class kablaze {
 		Sleep.main(600);
 		System.out.println("Josh: Anyways, I've got to go home.. Do you use discord by any chance?");
 		String haveDiscord = scan.nextLine();
-		if ("y".equalsIgnoreCase(haveDiscord.charAt(0))) {
+		if ("y".equalsIgnoreCase(haveDiscord.substring(0, 1))) {
 			System.out.println(name + ": " + haveDiscord + "!");
 			Sleep.main(600);
 			System.out.println("Josh: Oh sweet, whats your ID? Mine is cmyui#5585.");
@@ -278,4 +280,3 @@ public class kablaze {
 		//Unfinished
 		}
 	}
-}
