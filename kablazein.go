@@ -93,6 +93,9 @@ func main() {
 	} else if favourite == "howl" {
 		kill = false
 		fmt.Println("Josh: :^)")
+	} else if favourite == "solis" {
+		kill = false
+		fmt.Println("Josh: oh yeah dude solis is my favourite relax cheater too :)")	
 	} else if favourite == "cmyui" {
 		kill = false
 		fmt.Println("Josh: <3")
