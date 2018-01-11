@@ -13,9 +13,8 @@ func main() {
 	var name string
 	fmt.Scanln(&name)
 	fmt.Println(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
-	name = strings.ToLower(name)
 
-	if name == "josh" {
+	if name == "josh" && name == "Josh" {
 		sleepm(1400)
 		fmt.Println("J̸̢̨̨̦͚̠̺̱̜̙͙̣̗̱͔̝͍̮͕̠̱̥͎̮̟͇̞̾͂͌̈́͆̈̍̄͒̓̈̈́͐̓͛̐̈́͗͆̇̑̓̽̽̑̊̊̚ͅo̴̧̨̧̼͕̫̭̭̫̞̙͎̯̱̩̩͚̦͉̱̞̜̲͍̮̮͙̥͆͑͛̓͌́̉̏̎͐͐́͂̎̐̍̋̀̀́̇̈́̀̓̚̚̕͝ş̶̢̛̛̯̯͎̭̤̦̲̩̤̜͔̳͚̫̜̪̯̜͇͍͍̤̯̙̺̈́͂͗̒̈́̎̿̎͊̈́͑̈́̀̆́̽̈́̃͋̔̀̉͛͒̃̂ͅh̵̨̗̝͙̞̭͖̜̼͕̞͎̲͔̟̝͓̲̭͔̺̻͕̲̟̹̓̈́̉̊̄̈́̏̇̄̊̓̅̊̀̋̍̽̒̄͘̚̕̚̚͜͠͝͠͝ͅ:̴̢̺̘̩̩̩̠͕̬̳̼̘̩̬̺̱̯͓͔͓̣̗̜̲̱͉̣̂̃͂̍͒̏̋̇̅̓́͛͋͊̅̎̽̂̒͊̀̉̄̅̐͘͝͝ͅ ̸̛̛͓̤̩͕̗̠̬̗̮͉͈̫̖̻̠̲̘͇̠̪͓̙̭͉͖̙̳͎̄̍̓̐̾͗̾̎͆̌́̈̀̽́̀̆͑̌̓̎̆̽̑͘͘F̵̧̨̨̞̦̥͎̦̙͈̠̜̦̠̲͓̹̺̳̗̗͎̩̫̪̦̘͐̌̽̐͒̔͒͌̄̆̍͌̈́̅͒̆̍̈́̉̋̍̆̔̑̕͠͝͝ͅƯ̸̡̢̧͚͖͓̦̯̜̩̘͔̜̗̠̣̩̰̣̤̻̲͕͉͖͛̋̈́̄̂̈͗̄̂͂̔̇͊̇̐́̀̓́̇̆̐̆̕͘̚͜͝ͅͅÇ̶̨̻͖͉͓̻̣̹̺͔̥̠̜͚̤͓̤͈͕͔̲̞̤͖̼͂̈̇̓͐̂̄̉̉̎̊͗̄͋̀̈́̇̃̆́̎́́̍̆̚͜͠͠ͅĶ̵̧̨̳̺̭̤̘̯͕̳̝͙͈̩̝͖̼̦̫̥̜̭̫̞̰́̀̒̀̿̆͊͑̍̐͐̄̽͊̿̀́̈́͗̐̋̓̒͑̆͘͜͝͝ͅ ̷̡̲̼̜̪͓̞͈͙͎̦͇͍̙̘͚̦͈̝̬̺̤͚̘̖̠͔͙̾̓̾͑̏͆̈́̉̀̑̈̏̅͐͊̆͑̌͌̌̈͆͂̔͌̚̚͝ǭ̵̧̡̝̬̰͕̙͎̖̯͇̟͈̤̩̲̣̥̣̠̫͈̭̘͙͒͊̀̏͐́̎̈́̄̀̒͆̒́̋͆̈́̄̈́̑́͘̚̕͝͝͝ͅͅf̴̛̛̲̪̦̟̰̟̺̟̝̯̳̪̹̥̮͇͉̳͇̲͓̺̮̳͉̠͋̆̽̑̋̈̅͂̓͋̒̎͊̀̐͌̏͊͊̿̓́̚͘̚͜͠ͅ ̶̢̡̢̡̝̭̘̠̼̬̪̮͙̣̣̫̗̼̪̫̗̲̲̖͍̲̦͐̆̂̍͆̓̓̓͛̿̒̏̽̔̉͐͂͂̏͑́̔̀̑̏̚͝͝ͅf̶̡̛̲͈̮͕̩̫̰̻͇̯̱͖̪̮̤̪̤͕̱̠̝̮̰̤͇͇͆͐͛̾̇̑̀͑̒̌̅̀̇͌̓̓̍̓̑̈̒̾̃͂͘̚͝ͅf̵̡̢̡̢̨̧̛̲͖̘̝̼͔̖͕͕̝̥̝̞̣̮̱̼͕̩̻̜̈́̈́̽̅̈́̅̉̄̅̇̈́̃̄̍̈́́̂̂̌͑̽͒̐͗̕͘͘ͅ ̶̧̧̛̣̣̭̩̘͎̗̠͉͍͈̭͓̜͈̼̬̠͎͈͎̯͉̉̀̌̽̈́̑͛̈́͌́̌̀̈́̊̽͂̿̀̒͐̑͐̕͘͜͝͝͠ͅͅḒ̸̨̧̛̰̱͕̭͕̘͕̩̼̝͕̩̙̱̠̪̝͔̖̫̰͈̾̅̔͊̊̈́̒̔̈́̉̾́̈́̆̄̅̄̃̀̎̈́̄̽͂͘̚͠ͅͅͅi̶̡̨̢̛̩͕̯͔̫͍̗̯͕̥͖̟̟̤̫̟̞͙͙̬͕͍͚͛̂͌̃̈͗̈́́͗̐̀̈̑́̄̈́̓͊̾̓̑̓͐͘̕̕͝ͅͅë̶̢̧̡̛͉̘̳̩̬̩̗̳͖̮̤̫̝̝͖͙͙̞̱̞̹̥̱̯̬́̔̀̏̓̿̑̃̑̿͑̈́̇̐̍͊̎͗̿́̽̿̄̈́̈́͘͘ ̴̢̧̢̘̹̰͈̥̫͙̞͔͕̺͕̥͕͎̪̙̝̝̗̖̱̮̲̰̏̇͋̅͆̃̃́͐͌̓̄̎͗͛̂̈́̎͒̇̆̊̀̓͠͝͝͝á̴̡̨̧̡̛̞͖͕̪̫̭̥͎̱̱͙͕̲̞͍͎͇̜̞͔̫͍̤͙̐́̃̌̊͑̋͑͋̃̊̋̀̊̈́̆̊̈̈́̆͌͋̕̚̚͠ņ̸̢̛̥̰̙̖̝̤͔͎͖͔̭͙̝̲͇̗̖̘̖̝͇͈͙͓͌̾̐̐̃͐̀̽̂͆̈́͊͒́͛̽̔͗͗̔̈́͘̕͘͝͝͠ͅͅd̴̢̛͓̦̠̝͎̜̳̖̼̲͚͎͎̤͙̞̝̘̘̳͉̥̞͔̳͍̓̄̿̈̍̎̉̀́͒̍̋̔͆͐͆̉͑͑͒͗͑͋́͘͠͝ͅ ̷̢̨̢̨̡̧̘̝͍͓͓̮̹̦̠̟͎͔̦̮͓̭̖̹̣͕̰̹́̍͑̉̓̒͆̀͐̃̾͛̐͆̏̒̍̀̑̀̎͐̈́̀̓̕͠͝N̶̘̥̖͕̳̥͈̖͎̝̼̺͓̯̜̹̺͉͙̻͉͔̩͓̫̲̯͒́̋̈̄̀́́̇̋̌͐͑̎̊̐̆͑͂̉͂̂̈́͘̕͝͝͠ͅè̴̢̨̡̨̛̛̯̙̻̥̝͔̗̫̜̯̟̪̦͓͚͎̝̦̖̥̙̈̀̔̈́̋̒̒͂̆̓͊̍̎̐̅͑̈͆͋̒͑́̅̇͜͝ͅͅv̴̡̧̛̛̠̠̳̦͖̞͙͚̠̗̪̝̘̤̼̲̠̣̪̝̣̞̺̯̑̃́́̌̆͛̍̈́͒̈́͐͐̇̓͒̑̇̈́̿̉̉̈̓͘͝ͅͅĘ̸̢̧͓͙̪̮̱̞͔̠̱̰͕̜̱͎͇̫̩̱̯̜̼͓̹̅̂́̎̑̄̑̊́̐̑̿͗͋̅̐̉̉̀͂̂̅͊̑̅́̌̉͜͜R̷̡̛̛̺̮͉̞͎͔̻̭̮͕̞̫̻̪̻̖̱̠͇̹̟̤̜̖̈́̄͗͋̾̿̏̍̍̃̆̈́̂̑̆̂̾̈̐͂͑̓̆̋̔̃͜͜ͅ ̴̨̨̡̡̡̞̫̙̜̰͕̞͔̙̘͚͚̘̤̝̥̻͚̯̻̻͕̺̓͂͂̔͗̏̇̈́̿͐̅̉̿̐̈́̄̓̋̓̿͋̓̑̆̀̆͝͠R̸̢̭̳̙̺͔̫͚͇̪̟͕̥̟̻̣̬̗̻̥͔̯̻̼͉͍̩̊̎́̉̍͛̽̉̇̔̊̾̄̏̔̂̈́̀͌͊̈͘͘̕͘͝͠͠ͅĘ̴̛̠͙̦̱͎͔̣͙̻͙̗̙̟̫͕͔̘̯̦͔̹̥̼͚͓̣̱̀̓̑̈́͆̌̀̇́̈͒̐͛͌͌͌̓̉̅͒̑̈́̔̍̄͝͝T̵̡̧̨̧̨̜̩̺̲͍̰̮͉͈̹̬̗̲̠͉̗̟̙̟̹̰̥̭͑͆͌̅͗́̅́̈́͊̓̀̀͋͒͐̉̑͑̌́̎̃̿͑͛̏̾Ư̴̢̨̡̢̛̯̗̻̣̮͓̥̗̲̞͚̫͚̯̤̣̖̣͈͖̤̮̞̽̀̒̆̈́̂̽̔̇͊̄̐͗̌̍̌̆̌̈́̐̓̊͂̚͜͝͝R̴̠̰͖̱͍͚͉̙͔̮̺̮̹̭͍̰͕̫͚͈̠̺̘͓̦͉̾̏͗̇̾̓́̀͆̐̿̐̍̏̍̓̋̇́̐̈͆͊̚̚͜͜͠͠͝ñ̸̢̢̧̨͙̥̟̩̦͇͉̦̱̜̪͔̗̣̜̯̗̫̹̹̜̐̐̋͛̍̔̍̑̃̑͆́͊̀̎̌̈̇̔̈́̓͋̕͘͜͠͝͝ͅͅṟ̶̡̨̛̤͖̱͕̬̹̣̪̟͓͎͓̦͓̮̘̬̯͕̓͋̈́̓͛͌̆̑̑͑̃̔͐̈́̉̈́̀̂̐̿̌͘̚̕̚͝͝ͅ")
 		end()
@@ -53,21 +52,21 @@ func main() {
 			end()
 		}
 	} else {
-		sleepm(2)
+		sleeps(2)
 		fmt.Println("Josh: Aw.. Damn.. I really wanted to meet someone else that played it..")
 		sleeps(2)
 		fmt.Println("Josh: Anyways.. I've got to head home. See you around!")
 		end()
 	}
 	sleepm(1500)
-	fmt.Println("Josh: So, since we both play osu!.. Do you have a favourite player?")
+	fmt.Println("Josh: So, since we both play osu!.. Whos your favourite player?")
 	sleepm(300)
 	var favourite string
 	var kill bool
 	fmt.Print(name + ": ")
 	fmt.Scanln(&favourite)
 	favourite = strings.ToLower(favourite)
-	sleepm(1)
+	sleeps(1)
 	if favourite == "kablaze" {
 		kill = false
 		sleeps(1)
@@ -88,15 +87,18 @@ func main() {
 		fmt.Println("Josh: Although, he's not my favourite..")
 	} else if favourite == "howl" {
 		kill = false
-		fmt.Println(":^)")
+		fmt.Println("Josh: :^)")
 	} else if favourite == "cmyui" {
 		kill = false
-		fmt.Println("<3")
-	} else if favourite == "rafis" {
+		fmt.Println("Josh: <3")
+	} else if favourite == "rafis" && favourite == "azerite" && favourite == "zirba" && favourite == "hvick" && favourite == "hvick225" && favourite == "bubbleman" && favourite == "rohulk" && favourite == "angelsim" && favourite == "woey" && favourite == "emilia" {
 		kill = false
-		fmt.Println("Yea, I can't blame you for that. He's extremely talented. Although..")
+		fmt.Println("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
 		sleeps(1)
-		fmt.Println("He's not my favourite, but he's definitely up there.")
+		fmt.Println("Josh: He's not my favourite, but he's definitely up there.")
+	} else if favourite == "rrtyui" {
+		kill = false
+		fmt.Println("Josh: Meh.. Irrelevant trash player, but i'll let it slide..")
 	} else {
 		kill = true
 		sleeps(1)
@@ -108,7 +110,9 @@ func main() {
 		sleeps(4)
 	}
 	if kill == true {
-		fmt.Println("Josh: Actually what the fuck? How do you not appreciate any good players?\nI literally have no idea who you're even talking about. What the hell is wrong with you??")
+		fmt.Println("Josh: Actually what the fuck? How do you not appreciate any good players?")
+		sleeps(3)
+		fmt.Println("I literally have no idea who you're even talking about. What the hell is wrong with you??")
 		sleeps(3)
 		fmt.Println("Josh: Are you mentally insane? I don't understand your thinking")
 		sleeps(3)
@@ -121,10 +125,10 @@ func main() {
 		fmt.Println("J̢̙̮̙̮̬͍̰̺̗͚̥̠͉̹̙͕̹ͅͅo̢̢̨̧͓̗̩̫̙̠̪̪̯̯͙̱̬̼͍͜Ş̧̡̨͍̘̖̭̭̗͕̫̭͉̰̥͎͈̻͈h͙̖͇̘̱̦̩̱̞̝̞̬̯̣̹̞̰͉̮̯:̧̡͇̱̬͎̣̠̖̞̰͙̝͍̱̟̝̺̰͙ ̢̰͕̟̪̹̯͍̥͍͍̤̺̫̱̟̟͚̰͜W̡̡̨͕̺̬̠̦̮̼̼̭̭̳̗̯͕͉̥͜Ḩ͍̬̠͖̲̝̼̗͙̤̞̤̗̹̰̩̣͜͜Y̧̧̢̧̡̧̹̲̖̺̩̲̞͙̹̬̭̦̣ͅ ̡̢̫̺̥̦̘̻͔̦͔̙̣̝͔͓̫̭̤ͅA̢̡̧̡̼̰̬̗͚͔̠̜̺̲̝̯͕̫͓̭�̧̨̮̲͈̭͚̗̗̗̠̺̱̳͙̣͇̼͖̳�̡̧̧̨̙͉͇̲̗̣̹͙͇̤̜̣̖̟̩̠�̢̠͉̯͇̰͓͔̞̯̺̥̝͉̤͍̳̞͔̮Ŗ̡̨̺̭͇̼͖͉͎̹̫̮͍̫͕̝̬̫͜Ȩ̞̮̭̩͇̟̥̥̠̖̟̲̮̖̰͔̗͜ͅ ̡̢̪͉̤̫̱̝̦̺͖͍͇̫̱͈̫͕͓͜Y̨̡̟̤̹̯̮͈̤͙͈͓̗̤̮̳̮͚͓͈O̢̢̫͍̲͇̘̦̮̘͙̙̼̳͙̤͙̞͕̹U̡̥͇͔̞̝̝̩͇͍͔̰̭̜̯̫̯͇͜͜�̢̧̢̧͎̻̘͚̣̻͎̮͇̟̖̺̯͖̭̟ ͙͖̤̹̻̳̭̠̳̜̳͇̗̙̼̼̩̞̺̲S̡̳̼̩̱̘͎̠̜͖̣̘̩͖̻̠̱̳̞ͅŢ̡̯͚̰̤̯̮͚̫̹̦͚̩̰̟̻̻̩͜I̡̖̱̜͈͉̪͓̤̲̙͇̙̜̝̮̳̠̮̱L̨̢̨̢̡̞̠̫͉͕͈̩̬̘͉͚̠̻̯͜Ļ͕̪̳̺̲̹̤͓̰͖̥̹̪͔̺̲̣͓ͅ ̨̻̗̭̭͇̘̼̹͍͙͖̬̤̞̼͕̻̪ͅH̢̡̧͙̦̻̤̫͙͎͈͔̗͓̭̙̲͍̺͜E̢̠͔̬̳̙͖̰̭̺̪̗̠̲̘͚̞̗̭͜Ã͕̦̯̜̺͉͎͇̜̟͔͎̬̞̘̹̞̘̥ͅ³̢̯̘̼̯̤̭̬̫̼͙̹͙̬͎̳̟̫̲͓ķ̫̫̞͈̳̜̦̳̤̺͕̪̥̲̟̰̹͜ͅǫ̡̙̣̯̤̘͔͙̙͎̹̪̞̻̟̬̣͙͜ŗ͚̥̙̘̪͓͉͉̦̘͓̻̝̞̺̘͔ͅͅR̢̢̨̢̭͍̙̜̼̲̮͚̬̙̦͙̝̱͓͜Ȩ̮̥͇̤͉͍̦̞̹͉̞̹̳̤̣̫̜̻̬?̢̝̬̹̣̝͓͍̹̱̺̩̪̺̤̭̗͉̩̞?̨̡̙̮͖̞̟͙̺͖̩̭̻̯͓̖͉̺̦͜")
 		sleepm(800)
 		fmt.Println("jalapeÃ±o: L E A V E")
-		sleepm(300)
+		sleepm(800)
 		count := 1
 		for count < 20 {
-			fmt.Println("�̡̡̡̢̧̨̧̢̨͎͎͕̙̣̪̞͙̲̰̭̞̮͕͇̪̮̫̮̯̮̜͎̦̫̗̪̩̥͔̪͈̮̞̦̬̭͚̟̖͕͎̥̖̞̱̠̖̺̠̻͖͔̮̬̦̪͙̦͇̲̖̫͈͙̲̹͎̭͖͖̣͍̱̹̣̯͎̬͕̟̱̰̺̜̣͙̫͜ͅͅJ̨̨̢̨̡̢̨̡̧̡̨̢̺̼͉̼̜̠͍͎͖̳̰̮͕̠̬̱͔̮̺̦̝̺̺̭̙͎̺̦̘̺̖͙̻̰̰̟̣̮̪̻͙͇͈̝̤̩̼̟̬̯̠̖̰̝̤̩̞̣͚̺̤͚̻͓̖̲̤̩̝̥̖̼̻̥̪̼̲̼͙͕̗̯͍̻̹͜͜ͅ ̧̨̨̡̡̢̡̧̨̢̡̢̢͙͈̝̫̮̥̼̺͔͚̖͍̲̖͍̜̟͈̞͈͉̻͙̮̱̯̲̣̪͇͎̤̣̞̬̘̖͓͎͉͕̬̰̞̠̼̗͍̣͍͉̫͓̣̻̦͕̬̟̯̦͚̩̣̝̮̝̰̯̭͎͚̜͖̬͖̱͖̻̠͎͜ͅͅͅͅͅ௸̡̧̨͖̩̳̪͎̬̬̱̤͇̼͉̖̬̤̠͎͙͖̼̪̯̟̩͍̦͉̗̤͚̫̗̣̬͚̬̪̜̺̹͍̳̥̜͕͔̟̠̙̪̳͔̙̞̫̟̥͚͔̟̤̥̪͔̦̫̩̘̼̩̬͕̗̺̺̩̭͔͈̠̭̟̪̻͇̯̼͍̰͙̳̗̠͜ͅͅͅ�̨̢̧̢̢̨̢̢̢̢̭̱̫͉̘̮͙̖̭̥̬̝̘͎̪̩̪̤̯̦̝̪̺̦̤͖̘̗̠̻̠̜̻̳̩̝͔̬͓̬̭̱͚̬̘̗̖͓̖̯̪͓͎͚̰̫͈̼̠̫̖͙͎̤̻̼̮͇̘̖̗͔͎̹͙̘̳̟̩̗̩̩͙͜͜͜ͅͅͅͅ ̡̧̢̢̢̡̡̧̧̨͔͖͍͖̩̤͇̩͍̥̜̥͓̬̗̯̖̝͔̪̲͚̦͉̦̘̘̤͚̭̟̯̯̦͍̩͎̺̜̟͙̣̝̯̦͖̮̪̞̤͉͇͉̜̳̠̻̺̻̭̩̤̘̥̖̗͍͍̮̘̣̭͇͖̱̻̪̩̥̗̗̘͜͜͜͜ͅͅͅͅ ̨̧̨̡̡̨̠̗͕̦̖̻̱̮̗̮̯̭͚̞̝̪͇̺͉̭̤͎̣̥͇͚͔̼̺̘̖̣̙͍͇̖̖̻͈̪͉͉̗̥̫͔̗̼̻͈͕̩͇͖̳͍̫̤̦̥̩͙͕͉͔̝͚̱̣͖͍͎̮̺͙̠̗̮̘̮̜̻̩͈͎͜͜͜ͅͅͅͅͅͅ ̡̡̢̨̧̨̡̪̫̗͕̖̠͚͖͈̟̩̞̘̲͚̭̥͇̙̻̜̲̰̜̻̦͇̦̻̠͚̦̩̘̩̟͖̤̯̯͓͖̘̪͚̦̦̘̜͍͓̠̤̲̫̩̰̞͈̫͎̭̣̮̫̹̯̺̯̩̝̗̪̻̗̺̜̟̞̘̱̭̟̺̣̱͔̙͈̯̗͜ͅ ̧̨̨̨̢͙̘͇̪̟̤̗̱̩̹̳̻͉̣̙̪̫̣̪̝̬̥͔̘̥̳̱̜̘̳̤̺̘̟̙̣̪͔̞͔̠̪̭̹̝͍̜̰̫̰̳̭̣͕̗̜̣͙̹̘̼̲̫̗̰̤̗͖̗͚̝̺̜̪̥͍͓̜̼̠̱̻̯̙̺̠͈͙̹͎͍͜͜ͅͅ�̨̨̢̧̧̢̧̡̡̨̡̢̡͔͍̩̟̤̳̟̣̤̬͈̗̘̞̬͍̭̫̮̘̹̣͖̬̮͕͈̻͙̹̭̦̣͎͖͎̹̹̹̩̼͕͔͎̗̪̜̝̼̺̥̥̩̹̯͈̜̻̟͉̦͉̻̙͚̱͚̺͕̫̭̩͓̱̣̖̟͖͇͇̪̝̞͉͔̖ͅ�̢̧̢̢̢̧̢̙̖̹͙͈̳͎͎͈̭̹̞̙̩͇͇̝̬̥̠̺͖͎̣̹͚̞̥͙̭̜̮̞̖̩̦̖̺̺̱͓̞̺̦͙̠͚̰͎͔̙̘͉̦̳̼͎̥̬̯̜̗̩̟͔̦̖̯̤̗̗͚͈͔͎̣̭̳̫̗̪̖̯̤͔͉͈̲̳͓ͅͅͅ�̧̡̢̨̡̨̢̨̢̨̡̢̡̧̧̝̣͈̩̥͙͎̭̺̣͔̯̻̠̝̻̦̦͉̙̻̝͙̗̥̹̹̼̜̥͎̜̤̖̮͇͈̗͈̟̘͎̹̠̮̬̻̦̳̗̩̯̬̲̥̪͚̫̤͕̗̱̩̜͇̺̼̙̜̥̦̼̫̰̞͖̱̥̼̣͜͜ͅͅͅ ̧̡̡̡̡̧̡̡̨̢̼̯͔̮̯͕̯͔̫͍̜̹̪̱̜̘͕̩̯̯͉̺̱͈̬̗̪̖̬̱̥̦͕̭̥̰̦͚͍̱̜̦̦̳̤̩̣͚̲̘̣͇̳̝̙͈̲̻͉̹̼͔̝̲̗̲̫͚̙̠̭̹͕̜̹̳̲̠̹̯͉̘̰͇̺͈̼͜͜ͅ ̨̢̨̦̻͚̮̜̥̪̮̰̙̼̙̼͖̬̦̖̮͇̻̙̦͕͖̤͓̤̲̱̺͈̙͚̳̝̘̰̘̮͇̼͈͖̙͚͍̩̲̬͓̗͚͖̻͉̭̠̯̝̥͙͈͎͔͕̻̱͔̝͇̟̗̗̪̟͈̠̼̲̼̹͇̗̺̘͍̲̩̝̮͜͜ͅͅͅͅͅ ̨̧̢̢̡̢̢̢̧̢̡̢̡̟̫̜̱̮͙̲̰̦͚͎͈͉̹̜̗̟̥͕̳̖̗̳̞̫̻͕̳̺̼͔̬̯̞̘͖̼̠̬͔̯̗̹̙̲̰̬̫͎̣̩͎̝̦̯̣͚̼̤̲͖̥̮̜̻͔̮͔͖͙̱̥̘̯̻̤̟̻͜͜͜͜͜͜͜͜ͅ.̡̢̜͖̼̭̗̞͚̯̥̝̩̜̘̙̹̳̗̞̰͖̰̬͔̥̯͇̪̫̫̥͜\n")
+			fmt.Println("\n�̡̡̡̢̧̨̧̢̨͎͎͕̙̣̪̞͙̲̰̭̞̮͕͇̪̮̫̮̯̮̜͎̦̫̗̪̩̥͔̪͈̮̞̦̬̭͚̟̖͕͎̥̖̞̱̠̖̺̠̻͖͔̮̬̦̪͙̦͇̲̖̫͈͙̲̹͎̭͖͖̣͍̱̹̣̯͎̬͕̟̱̰̺̜̣͙̫͜ͅͅJ̨̨̢̨̡̢̨̡̧̡̨̢̺̼͉̼̜̠͍͎͖̳̰̮͕̠̬̱͔̮̺̦̝̺̺̭̙͎̺̦̘̺̖͙̻̰̰̟̣̮̪̻͙͇͈̝̤̩̼̟̬̯̠̖̰̝̤̩̞̣͚̺̤͚̻͓̖̲̤̩̝̥̖̼̻̥̪̼̲̼͙͕̗̯͍̻̹͜͜ͅ ̧̨̨̡̡̢̡̧̨̢̡̢̢͙͈̝̫̮̥̼̺͔͚̖͍̲̖͍̜̟͈̞͈͉̻͙̮̱̯̲̣̪͇͎̤̣̞̬̘̖͓͎͉͕̬̰̞̠̼̗͍̣͍͉̫͓̣̻̦͕̬̟̯̦͚̩̣̝̮̝̰̯̭͎͚̜͖̬͖̱͖̻̠͎͜ͅͅͅͅͅ௸̡̧̨͖̩̳̪͎̬̬̱̤͇̼͉̖̬̤̠͎͙͖̼̪̯̟̩͍̦͉̗̤͚̫̗̣̬͚̬̪̜̺̹͍̳̥̜͕͔̟̠̙̪̳͔̙̞̫̟̥͚͔̟̤̥̪͔̦̫̩̘̼̩̬͕̗̺̺̩̭͔͈̠̭̟̪̻͇̯̼͍̰͙̳̗̠͜ͅͅͅ�̨̢̧̢̢̨̢̢̢̢̭̱̫͉̘̮͙̖̭̥̬̝̘͎̪̩̪̤̯̦̝̪̺̦̤͖̘̗̠̻̠̜̻̳̩̝͔̬͓̬̭̱͚̬̘̗̖͓̖̯̪͓͎͚̰̫͈̼̠̫̖͙͎̤̻̼̮͇̘̖̗͔͎̹͙̘̳̟̩̗̩̩͙͜͜͜ͅͅͅͅ ̡̧̢̢̢̡̡̧̧̨͔͖͍͖̩̤͇̩͍̥̜̥͓̬̗̯̖̝͔̪̲͚̦͉̦̘̘̤͚̭̟̯̯̦͍̩͎̺̜̟͙̣̝̯̦͖̮̪̞̤͉͇͉̜̳̠̻̺̻̭̩̤̘̥̖̗͍͍̮̘̣̭͇͖̱̻̪̩̥̗̗̘͜͜͜͜ͅͅͅͅ ̨̧̨̡̡̨̠̗͕̦̖̻̱̮̗̮̯̭͚̞̝̪͇̺͉̭̤͎̣̥͇͚͔̼̺̘̖̣̙͍͇̖̖̻͈̪͉͉̗̥̫͔̗̼̻͈͕̩͇͖̳͍̫̤̦̥̩͙͕͉͔̝͚̱̣͖͍͎̮̺͙̠̗̮̘̮̜̻̩͈͎͜͜͜ͅͅͅͅͅͅ ̡̡̢̨̧̨̡̪̫̗͕̖̠͚͖͈̟̩̞̘̲͚̭̥͇̙̻̜̲̰̜̻̦͇̦̻̠͚̦̩̘̩̟͖̤̯̯͓͖̘̪͚̦̦̘̜͍͓̠̤̲̫̩̰̞͈̫͎̭̣̮̫̹̯̺̯̩̝̗̪̻̗̺̜̟̞̘̱̭̟̺̣̱͔̙͈̯̗͜ͅ ̧̨̨̨̢͙̘͇̪̟̤̗̱̩̹̳̻͉̣̙̪̫̣̪̝̬̥͔̘̥̳̱̜̘̳̤̺̘̟̙̣̪͔̞͔̠̪̭̹̝͍̜̰̫̰̳̭̣͕̗̜̣͙̹̘̼̲̫̗̰̤̗͖̗͚̝̺̜̪̥͍͓̜̼̠̱̻̯̙̺̠͈͙̹͎͍͜͜ͅͅ�̨̨̢̧̧̢̧̡̡̨̡̢̡͔͍̩̟̤̳̟̣̤̬͈̗̘̞̬͍̭̫̮̘̹̣͖̬̮͕͈̻͙̹̭̦̣͎͖͎̹̹̹̩̼͕͔͎̗̪̜̝̼̺̥̥̩̹̯͈̜̻̟͉̦͉̻̙͚̱͚̺͕̫̭̩͓̱̣̖̟͖͇͇̪̝̞͉͔̖ͅ�̢̧̢̢̢̧̢̙̖̹͙͈̳͎͎͈̭̹̞̙̩͇͇̝̬̥̠̺͖͎̣̹͚̞̥͙̭̜̮̞̖̩̦̖̺̺̱͓̞̺̦͙̠͚̰͎͔̙̘͉̦̳̼͎̥̬̯̜̗̩̟͔̦̖̯̤̗̗͚͈͔͎̣̭̳̫̗̪̖̯̤͔͉͈̲̳͓ͅͅͅ�̧̡̢̨̡̨̢̨̢̨̡̢̡̧̧̝̣͈̩̥͙͎̭̺̣͔̯̻̠̝̻̦̦͉̙̻̝͙̗̥̹̹̼̜̥͎̜̤̖̮͇͈̗͈̟̘͎̹̠̮̬̻̦̳̗̩̯̬̲̥̪͚̫̤͕̗̱̩̜͇̺̼̙̜̥̦̼̫̰̞͖̱̥̼̣͜͜ͅͅͅ ̧̡̡̡̡̧̡̡̨̢̼̯͔̮̯͕̯͔̫͍̜̹̪̱̜̘͕̩̯̯͉̺̱͈̬̗̪̖̬̱̥̦͕̭̥̰̦͚͍̱̜̦̦̳̤̩̣͚̲̘̣͇̳̝̙͈̲̻͉̹̼͔̝̲̗̲̫͚̙̠̭̹͕̜̹̳̲̠̹̯͉̘̰͇̺͈̼͜͜ͅ ̨̢̨̦̻͚̮̜̥̪̮̰̙̼̙̼͖̬̦̖̮͇̻̙̦͕͖̤͓̤̲̱̺͈̙͚̳̝̘̰̘̮͇̼͈͖̙͚͍̩̲̬͓̗͚͖̻͉̭̠̯̝̥͙͈͎͔͕̻̱͔̝͇̟̗̗̪̟͈̠̼̲̼̹͇̗̺̘͍̲̩̝̮͜͜ͅͅͅͅͅ ̨̧̢̢̡̢̢̢̧̢̡̢̡̟̫̜̱̮͙̲̰̦͚͎͈͉̹̜̗̟̥͕̳̖̗̳̞̫̻͕̳̺̼͔̬̯̞̘͖̼̠̬͔̯̗̹̙̲̰̬̫͎̣̩͎̝̦̯̣͚̼̤̲͖̥̮̜̻͔̮͔͖͙̱̥̘̯̻̤̟̻͜͜͜͜͜͜͜͜ͅ.̡̢̜͖̼̭̗̞͚̯̥̝̩̜̘̙̹̳̗̞̰͖̰̬͔̥̯͇̪̫̫̥͜")
 			count++
 		}
 		end()
@@ -134,11 +138,11 @@ func main() {
 	fmt.Println("Josh: To be honest, i'm amazed you've made it this far..")
 	sleeps(2)
 	fmt.Println(name + ": What?")
-	sleepm(2)
+	sleeps(2)
 	fmt.Println("Josh: mm.. Nothing.. It's almost like you're trying to read my mind is all..")
-	sleepm(2)
+	sleeps(2)
 	fmt.Println(name + ": Uh.. Sorry I'm not sure I know what you're talking about..")
-	sleepm(2)
+	sleeps(2)
 	fmt.Println("Josh: heh... Of course not..")
 	sleeps(4)
 	fmt.Println("Josh: Have you ever heard of Akatsuki?")
@@ -149,27 +153,27 @@ func main() {
 	akatsuki = strings.ToLower(akatsuki)
 
 	if akatsuki[0] == 'y' {
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("Josh: Yea.. It's been getting quite a lot of attention recently..")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("I'm actually the creator of it.. haha")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println(name + ": Oh dude, thats kind of cool.. although.. isnt it litrally just ripples code..?")
 		sleeps(2)
 		fmt.Println("Josh: �.")
-		sleeps(5)
+		sleeps(4)
 		fmt.Println("Jos�̡̢̡̝̥͇̠̗͖̙̹̥̩̣̻̞͎̜̹͇̻͚̖̭̖̟̼ͅh̨̢̨̨̭̞̖̲̝̭̠̜̳͔̱̫̞̼̠̖͎͎̠̰̦̦̬̭:̡̺̰̲̣̲̼̲̖͔̗̞̲͇͈̖̠̯̜̲̮̦̼̹̻̠̱ͅ ̡̧̢̢̟̩͈̞̳̙͔͔̜͓̼̥̭̝̘͔͓̝̻̪̯̯̹ͅI̧̻̯͍̜͓͈̹͖̰̬̪̹͇̱̝̣̥̠͙̣͉̲̠̺̠̲ͅ'̨̧̢̢̡̨̡̙̟̙̳̥͓͎̼̩̰̠̟̞̗͍̺͙̪̬̝ͅm̢̡̧̨̩̜̠̝̱͕̲̦͇̰̬͎͙̠̱̼̹̯̥̘̰͈̥̣ ̡̡̹͓̥̙̣̙͈͈̘̠̣̰̞͈͎̲̩̣̼͎̝̳̣͍͜ͅs̢̢̫̜̘͖̞̫̩̩̟̻͔̻̙̼̜͓̭̜͔̬͕̣͜͜ͅͅo̡̢̨̲̼͉͇̟͖̯̰͉̦͍̻͓̜̻̫͇͍͖̮̰͍̯͚͜ŗ̥͉̜̩̰͉̩̼͖̮̱̻͍̩͎̮͔͕̲͈̹͇̦̪ͅͅ    rRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-")
 		end()
 	} else {
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("Josh: Oh.. Yea it's an osu! private server I made using Ripple's source as a base..")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("Josh: It sortof gets a lot of hate due to the fact that most people just see it as a ripple clone..")
 		sleeps(2)
 		fmt.Println("Which I actually understand, and even agree with.. but I wish that people wouldn't spread so much hate about it..")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("Oh well.. This isn't the place to vent about that kind of stuff anyways..")
-		sleeps(1)
+		sleeps(2)
 	}
 
 	fmt.Println("Have you done anything interesting recently?")
@@ -180,7 +184,7 @@ func main() {
 	interesting = strings.ToLower(interesting)
 
 	if interesting[0] == 'y' {
-		sleepm(600)
+		sleepm(900)
 		fmt.Println("Oh dude, tell me about it!")
 		sleepm(300)
 		print(name + ": ")
@@ -188,7 +192,7 @@ func main() {
 		blabla = strings.ToLower(blabla)
 		fmt.Println(name + ": ")
 		if blabla[0] == 'n' {
-			sleepm(800)
+			sleepm(900)
 			fmt.Println("ẅ̮̙̪͚̭̪̳͓̩́̐̈̎͊̌̃̊̀͗ͅĕ̮͉̖̫̣̱̦̰̜̽̑̿́͆̿̈͂͠ͅl̪͓̘̲̙͓̠̱̟̎͑̎̌̿͑̎͑̇̕ͅl̡̨͎̭͔̖̹̺̻̗̅̑̉̌̂́̄̒̎̕ ̢̗̞̻̟͓̘͖͎̲͆̒͌́͆̎͛̂͆͝f̹͙̗̲̝̮͎̮̜͎̆̎̉͌̊̈̃̍̎̚u̡̜̩̗̺̺̱̺͖̗̔̍̈̓̈́͒̎͛͝͝ç̬̪̟̟̤͙̹̟͔̽̋̀̈́͛̾͋̿̈͝k̦̥̩̬̞̗̟̳͎͇͒̓͗̊̾̿̒̈́̆̊ ̢̜͚̳̙̖͉͇͇͂̑̂̇̄͆̌̉̈́͘͜y̹̰͍͍̙̲̰̞̳͉͒̐̓̆̉̓̆̆̚͝o̞̫̻̗̖͎̬̝̝̽̐̈̆̔͑̾̎͘͝ͅu̠̞͕̮͎̫̦̻͈͔̐̆͊͋͛͛̎̔̏͝ ̨͙̳̝̭͚̰̲̰̘̋̾͐̌̅̈́̈̃͆͘ẗ̛̜̝̠̖̪̬̹̗͍̺͂͆͛́͂̒͊͘ơ̧̹͚͇̯͎͕̳̘͍͌̓̑̉̐͐̈́̊̋ǫ̧̡̟̟͇̥̯̠̱̈́͗̌͗̈́̒̍̉͝͠")
 			end()
 		}
@@ -198,13 +202,13 @@ func main() {
 	} else {
 		sleepm(600)
 		fmt.Println("Josh: Oh.. Well that kinda sucks.. I haven't done much either I guess..")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("Josh: Well.. At least other th�n the osu! server. But that wasn't even me really. I really owe it to Howl and Nyo.")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println(name + ": Well.. Why not do something for them then..?")
 		sleeps(2)
 		fmt.Println("mmm..")
-		sleeps(1)
+		sleeps(2)
 		fmt.Println("Josh: I'm really now sure what I could even do.. One of their developers doesnt like me at all\nand I'm not sure what the other one thinks..")
 		sleeps(4)
 		fmt.Println(name + ": Oh well Sucks lole")
@@ -257,7 +261,7 @@ func main() {
 		var count int
 		count = 0
 		for count < 20 {
-			fmt.Println("Jo̧̡̧̨̨̧̧̢͓͓̼̘̝͇͈͍̼͓̦̟̝͉͍͍̬͈͔̜̥̜̱͕̲̲̗̥̖̻̦̠̠̹̣̣͖̞̺̻͖̤̪̭̳͖͈͚̦̳͔̥̰̜̪̩̱̗͚̞̯̘̮͕͔͙͍̭͙̳̺̱̥̣̗͖͙͎̥̣̭̞͇̦̠̘̥͜ͅͅͅͅ࿊hs�h: loO  Le h�e SDlo i am   coo   kiez i xDD℻DS�႟DDSD��᥀᥀℆℆℆D\n")
+			fmt.Println("\nJo̧̡̧̨̨̧̧̢͓͓̼̘̝͇͈͍̼͓̦̟̝͉͍͍̬͈͔̜̥̜̱͕̲̲̗̥̖̻̦̠̠̹̣̣͖̞̺̻͖̤̪̭̳͖͈͚̦̳͔̥̰̜̪̩̱̗͚̞̯̘̮͕͔͙͍̭͙̳̺̱̥̣̗͖͙͎̥̣̭̞͇̦̠̘̥͜ͅͅͅͅ࿊hs�h: loO  Le h�e SDlo i am   coo   kiez i xDD℻DS�႟DDSD��᥀᥀℆℆℆D")
 			count++
 		}
 		end()
@@ -308,24 +312,27 @@ func main() {
 		break
 	}
 	sleeps(1)
-	println("Josh: I'll make sure to add you when I get on!")
+	fmt.Println("Josh: I'll make sure to add you when I get on!")
 	sleeps(2)
-	println("Josh heads off towards his home, and I do the same..")
+	fmt.Println("Josh heads off towards his home, and I do the same..")
 	sleeps(1)
-	println("..")
+	fmt.Println("..")
 	sleeps(1)
-	println("..")
+	fmt.Println("..")
 	sleeps(1)
-	println("..")
+	fmt.Println("..")
 	sleeps(1)
-	println("..")
+	fmt.Println("..")
 	sleeps(1)
-	println("..")
+	fmt.Println("..")
 	sleeps(1)
-	println("I open my door, take a seat and turn on my PC.")
+	fmt.Println("I open my door, take a seat and turn on my PC.")
 	sleeps(1)
-	println("Mmm.. It's been a long day..")
+	fmt.Println("Mmm.. It's been a long day..")
 	sleeps(2)
+	fmt.Println("Congratz, you've reached the end of the game.. for now..")
+	sleeps(5)
+	end()
 }
 
 var x int
