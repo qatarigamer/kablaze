@@ -3,13 +3,18 @@ package main
 import (
 	"fmt"
 	"os"
+	"os/exec"
+	"runtime"
 	"strings"
 	"time"
 )
 
 func main() {
+	fmt.Println("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
+	sleeps(10)
+	CallClear()
 	fmt.Println("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
-	sleepm(200)
+	sleepm(600)
 	var name string
 	fmt.Scanln(&name)
 	fmt.Println(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
@@ -22,7 +27,7 @@ func main() {
 
 	sleeps(1)
 	fmt.Println("Josh: Mm.. Have you ever heard of a game called osu?")
-	sleepm(300)
+	sleepm(600)
 	var playOsuString string
 	fmt.Print(name + ": ")
 	fmt.Scanln(&playOsuString)
@@ -33,7 +38,7 @@ func main() {
 		fmt.Println("Josh: Oh wow, really?")
 		sleeps(2)
 		fmt.Println("Josh: Do you actually play the game?")
-		sleepm(300)
+		sleepm(600)
 		var playOsu string
 		fmt.Print(name + ": ")
 		fmt.Scanln(&playOsu)
@@ -60,7 +65,7 @@ func main() {
 	}
 	sleepm(1500)
 	fmt.Println("Josh: So, since we both play osu!.. Whos your favourite player?")
-	sleepm(300)
+	sleepm(600)
 	var favourite string
 	var kill bool
 	fmt.Print(name + ": ")
@@ -177,7 +182,7 @@ func main() {
 	}
 
 	fmt.Println("Have you done anything interesting recently?")
-	sleepm(300)
+	sleepm(600)
 	fmt.Print(name + ": ")
 	var interesting string
 	fmt.Scanln(&interesting)
@@ -186,7 +191,7 @@ func main() {
 	if interesting[0] == 'y' {
 		sleepm(900)
 		fmt.Println("Oh dude, tell me about it!")
-		sleepm(300)
+		sleepm(600)
 		print(name + ": ")
 		var blabla string
 		blabla = strings.ToLower(blabla)
@@ -220,7 +225,7 @@ func main() {
 	fmt.Println("Josh: Yup.. Most likely. I'm just waiting for the day where I come out of my shell.")
 	sleeps(2)
 	fmt.Println("Josh: So.. Out of curiousity, are you any good at osu..? What's your rank?")
-	sleepm(300)
+	sleepm(600)
 	fmt.Print(name + ": ")
 	var rank int
 	fmt.Scanln(&rank)
@@ -268,7 +273,7 @@ func main() {
 	}
 	sleeps(1)
 	fmt.Println("Josh: Anyways, I've got to go home.. Do you use discord by any chance?")
-	sleepm(300)
+	sleepm(600)
 	fmt.Print(name + ": ")
 	var haveDiscord string
 	fmt.Scanln(&haveDiscord)
@@ -330,16 +335,23 @@ func main() {
 	sleeps(1)
 	fmt.Println("Mmm.. It's been a long day..")
 	sleeps(2)
-	fmt.Println("Congratz, you've reached the end of the game.. for now..")
-	sleeps(5)
-	end()
+	realEnd()
 }
 
 var x int
 
+func realEnd() {
+	sleeps(3)
+	CallClear()
+	fmt.Println("Congratz, you've reached the end of the game.. for now.. Feel free to contribute, or just tell cmyui you've reached this point,\nas theres only a few that have <3")
+	sleeps(10)
+	os.Exit(3)
+}
 func end() {
-	time.Sleep(3 * time.Second)
+	sleeps(3)
+	CallClear()
 	fmt.Println("Game Over")
+	sleeps(10)
 	os.Exit(3)
 }
 func sleeps(x int) {
@@ -347,4 +359,28 @@ func sleeps(x int) {
 }
 func sleepm(x int) {
 	time.Sleep(time.Duration(x) * time.Millisecond)
+}
+
+var clear map[string]func() //create a map for storing clear funcs
+
+func init() {
+	clear = make(map[string]func())
+	clear["linux"] = func() {
+		cmd := exec.Command("clear")
+		cmd.Stdout = os.Stdout
+		cmd.Run()
+	}
+	clear["windows"] = func() {
+		cmd := exec.Command("cls")
+		cmd.Stdout = os.Stdout
+		cmd.Run()
+	}
+}
+func CallClear() {
+	value, ok := clear[runtime.GOOS]
+	if ok {
+		value()
+	} else {
+		panic("Woops.. The screen was supposed to be cleared here, but it seems your OS is unsupported. Sorry about that >.>")
+	}
 }
