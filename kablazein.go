@@ -101,56 +101,14 @@ func main() {
 	case "chase":
 		kill = false
 		fmt.Println("Josh: <3")
-	case "rafis":
-	case "azerite":
-	case "zirba":
-	case "hvick":
-	case "hvick225":
-	case "bubbleman":
-	case "rohulk":
-	case "angelsim":
-	case "emilia":
-	case "woey":
-	case "osu player84":
-	case "mathi":
-	case "totoki":
-	case "_ryuk":
-	case "ryuk":
-	case "mcy3":
-	case "spare":
-	case "danyl":
-	case "piggey":
-	case "bro_gamer72":
-	case "gayz":
-	case "gayzmcgee":
-	case "dustice":
-	case "idke":
-	case "happystick":
-	case "_index":
-	case "index":
-	case "karthy":
-	case "yaong":
-	case "digitalhypno":
-	case "toy":
-	case "aireu":
-	case "wubwoofwolf":
-	case "talala":
-	case "resia":
-	case "adamqs":
-	case "wilchq":
-	case "mouseeasy":
-	case "flyingtuna":
-	case "thepoon":
-	case "recia":
-	case "dumii":
-	case "mlaw22":
-	case "mlaw":
-	case "mshake":
-	case "xilver":
-	case "ceptin":
-	case "plz enjoy game":
-	case "apraxia":
-	case "doomsday":
+	case "rafis", "azerite", "zirba", "hvick", "hvick225", "bubbleman",
+		"rohulk", "angelsim", "emilia", "woey", "osu player84", "mathi",
+		"totoki", "_ryuk", "ryuk", "mcy3", "spare", "danyl", "piggey",
+		"bro_gamer72", "gayz", "gayzmcgee", "dustice", "idke", "happystick",
+		"_index", "index", "karthy", "yaong", "digitalhypno", "toy", "aireu",
+		"wubwoofwolf", "talala", "resia", "adamqs", "wilchq", "mouseeasy",
+		"flyingtuna", "thepoon", "recia", "dumii", "mlaw22", "mlaw", "mshake",
+		"xilver", "ceptin", "plz enjoy game", "apraxia", "doomsday":
 		kill = false
 		fmt.Println("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
 		sleeps(1)
