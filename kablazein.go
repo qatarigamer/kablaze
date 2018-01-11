@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 	"os/exec"
@@ -10,13 +11,15 @@ import (
 )
 
 func main() {
+	reader := bufio.NewReader(os.Stdin)
+	bytes, _, _ := reader.ReadLine()
 	fmt.Println("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
 	sleeps(10)
 	CallClear()
 	fmt.Println("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
 	sleepm(600)
 	var name string
-	fmt.Scanln(&name)
+	name = string(bytes)
 	fmt.Println(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
 
 	if name == "josh" && name == "Josh" {
@@ -30,7 +33,7 @@ func main() {
 	sleepm(600)
 	var playOsuString string
 	fmt.Print(name + ": ")
-	fmt.Scanln(&playOsuString)
+	playOsuString = string(bytes)
 	playOsuString = strings.ToLower(playOsuString)
 
 	if playOsuString[0] == 'y' {
@@ -41,7 +44,7 @@ func main() {
 		sleepm(600)
 		var playOsu string
 		fmt.Print(name + ": ")
-		fmt.Scanln(&playOsu)
+		playOsuString = string(bytes)
 		playOsu = strings.ToLower(playOsu)
 
 		if playOsu[0] == 'y' {
@@ -69,7 +72,7 @@ func main() {
 	fmt.Print(name + ": ")
 	var favourite string
 	var kill bool
-	fmt.Scanln(&favourite)
+	favourite = string(bytes)
 	favourite = strings.ToLower(favourite)
 	sleeps(1)
 	switch favourite {
@@ -166,7 +169,7 @@ func main() {
 	sleepm(300)
 	fmt.Print(name + ": ")
 	var akatsuki string
-	fmt.Scanln(&akatsuki)
+	akatsuki = string(bytes)
 	akatsuki = strings.ToLower(akatsuki)
 
 	if akatsuki[0] == 'y' {
@@ -197,7 +200,7 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var interesting string
-	fmt.Scanln(&interesting)
+	interesting = string(bytes)
 	interesting = strings.ToLower(interesting)
 
 	if interesting[0] == 'y' {
@@ -206,7 +209,7 @@ func main() {
 		sleepm(600)
 		print(name + ": ")
 		var blabla string
-		fmt.Scanln(&blabla)
+		blabla = string(bytes)
 		blabla = strings.ToLower(blabla)
 
 		if blabla[0] == 'n' {
@@ -241,7 +244,7 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var rank int
-	fmt.Scanln(&rank)
+	rank = string(bytes)
 	if rank >= 100000 {
 		sleepm(400)
 		fmt.Println("Josh: Oh, so you're still pretty new to the game then!")
@@ -289,7 +292,7 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var haveDiscord string
-	fmt.Scanln(&haveDiscord)
+	haveDiscord = string(bytes)
 	haveDiscord = strings.ToLower(haveDiscord)
 
 	if haveDiscord[0] == 'y' {
@@ -307,7 +310,7 @@ func main() {
 	}
 	var discord string
 	fmt.Print(name + "Yea sure, mines: ")
-	fmt.Scanln(&discord)
+	discord = string(bytes)
 	discord = strings.ToLower(discord)
 	switch discord {
 	case "cmyui#5585":
