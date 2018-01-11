@@ -92,10 +92,13 @@ func main() {
 		fmt.Println("Josh: Although, he's not my favourite..")
 	} else if favourite == "howl" {
 		kill = false
-		fmt.Println("Josh: :^)")
+		fmt.Println("Josh: oh yeah dude solis is my favourite relax cheater too :)")
+	} else if favourite == "solis" {
+		kill = false
+		fmt.Println("Josh: <3")	
 	} else if favourite == "cmyui" {
 		kill = false
-		fmt.Println("Josh: <3")
+		fmt.Println("Josh: <3")	
 	} else if favourite == "rafis" && favourite == "azerite" && favourite == "zirba" && favourite == "hvick" && favourite == "hvick225" && favourite == "bubbleman" && favourite == "rohulk" && favourite == "angelsim" && favourite == "woey" && favourite == "emilia" {
 		kill = false
 		fmt.Println("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
