@@ -72,7 +72,8 @@ func main() {
 	fmt.Scanln(&favourite)
 	favourite = strings.ToLower(favourite)
 	sleeps(1)
-	if favourite == "kablaze" {
+	switch favourite {
+	case "kablaze":
 		kill = false
 		sleeps(1)
 		fmt.Println("Josh: Wait.. what?")
@@ -85,29 +86,79 @@ func main() {
 		sleeps(3)
 		fmt.Println("Josh: Well, thats sortof his fault.. He doesn't really put himself 'out there' very much..")
 		sleeps(2)
-	} else if favourite == "cookiezi" {
+	case "cookiezi":
 		kill = false
 		fmt.Println("Josh: Haha. Yea, I definitely can't blame you for that one. I definitely think hes the BEST player,")
 		sleeps(1)
 		fmt.Println("Josh: Although, he's not my favourite..")
-	} else if favourite == "howl" {
+	case "howl":
 		kill = false
 		fmt.Println("Josh: :^)")
-	} else if favourite == "solis" {
+	case "solis":
 		kill = false
-		fmt.Println("Josh: oh yeah dude solis is my favourite relax cheater too :)")	
-	} else if favourite == "cmyui" {
+		fmt.Println("Josh: oh yeah dude solis is my favourite relax cheater too :)")
+	case "cmyui":
+	case "chase":
 		kill = false
 		fmt.Println("Josh: <3")
-	} else if favourite == "rafis" && favourite == "azerite" && favourite == "zirba" && favourite == "hvick" && favourite == "hvick225" && favourite == "bubbleman" && favourite == "rohulk" && favourite == "angelsim" && favourite == "woey" && favourite == "emilia" {
+	case "rafis":
+	case "azerite":
+	case "zirba":
+	case "hvick":
+	case "hvick225":
+	case "bubbleman":
+	case "rohulk":
+	case "angelsim":
+	case "emilia":
+	case "woey":
+	case "osu player84":
+	case "mathi":
+	case "totoki":
+	case "_ryuk":
+	case "ryuk":
+	case "mcy3":
+	case "spare":
+	case "danyl":
+	case "piggey":
+	case "bro_gamer72":
+	case "gayz":
+	case "gayzmcgee":
+	case "dustice":
+	case "idke":
+	case "happystick":
+	case "_index":
+	case "index":
+	case "karthy":
+	case "yaong":
+	case "digitalhypno":
+	case "toy":
+	case "aireu":
+	case "wubwoofwolf":
+	case "talala":
+	case "resia":
+	case "adamqs":
+	case "wilchq":
+	case "mouseeasy":
+	case "flyingtuna":
+	case "thepoon":
+	case "recia":
+	case "dumii":
+	case "mlaw22":
+	case "mlaw":
+	case "mshake":
+	case "xilver":
+	case "ceptin":
+	case "plz enjoy game":
+	case "apraxia":
+	case "doomsday":
 		kill = false
 		fmt.Println("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
 		sleeps(1)
 		fmt.Println("Josh: He's not my favourite, but he's definitely up there.")
-	} else if favourite == "rrtyui" {
+	case "rrtyui":
 		kill = false
 		fmt.Println("Josh: Meh.. Irrelevant trash player, but i'll let it slide..")
-	} else {
+	default:
 		kill = true
 		sleeps(1)
 		fmt.Println("Josh: ..")
