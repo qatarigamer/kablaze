@@ -244,7 +244,7 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var rank int
-	rank = string(bytes)
+	fmt.Scanln(&rank)
 	if rank >= 100000 {
 		sleepm(400)
 		fmt.Println("Josh: Oh, so you're still pretty new to the game then!")
