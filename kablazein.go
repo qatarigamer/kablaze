@@ -15,30 +15,39 @@ func main() {
 	pl("Hello! Welcome to my little Go game.\nIt's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 5 seconds..")
 	sleeps(5)
 	CallClear()
-	pl("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos.\nA man in a hoodie and slick black sweatpants approaches you..")
+	pl("You're sitting on an old park bench in Gage Park in Brampton, Ontario.. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos..\nA man in a hoodie and slick black sweatpants approaches you..")
 	td()
 	sleeps(5)
-	p(".")
-	pl("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
-	sleepm(600)
+	pl("??: Hey, do you happen to know what time it is?")
+	sleeps(2)
+	pl("Me: Oh yea, its uhh.. 12:35")
+	sleeps(2)
+	pl("??: Awesome, thanks")
+	sleeps(2)
+	pl("He sits down beside you.. He's quite sweaty and looks like he just finished his run..")
+	sleeps(2)
+	pl("??: Oh, sorry for not introducing myself. I'm Josh..")
+	pl("He extends his hand, and it takes me a second to react")
+	p("Me: Oh, right, sorry, I'm: ")
 	var name string
 	var nameLower string
 	reader := bufio.NewReader(os.Stdin)
 	bytes, _, _ := reader.ReadLine()
 	name = string(bytes)
-	pl(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
 
 	nameLower = strings.ToLower(name)
 	if nameLower == "josh" {
 		td()
-		sleepm(1400)
+		CallClear()
+		sleeps(1)
 		pl("F͍̖̣̿̃ͅͅͅÙ̖C̜̯̤̗̓ͤ̉͆ͅͅK̝͓ͪͮ ͖̓ͧ̋O͓̺̟̜̦̽ͣ͗́̀̚F̥̘͖ͯͩ̀̑͑̓̚F̝͑͑ͪ̇̊͌ͥ ̰̇A̫͍̠͙͚̟N̳͓̟͖̎̊ͅD͇̼̠̱̱̩̙̈̓ͣ̏ ̪̗ͫ̅Nͣ̌ͬͬ̔̈E͕̱͚̗̠̠ͨ͑̀̉̌V̫͖̲̟̹͖E̬͕͕͈R͎͉ ̤̹̙̲R̪̳ͯ͛̃ͦ̎ͫ̌E̖̝͈̱͈̫͓͑ͪ̓ͬͨ̊T̬͓͖͓̠̗͎̔̃U̖ͧ̄̔R̤̰̼͎͆̇̋ͧ̒̿ͯNͮ̉")
+		sleems(500)
 		end()
 	}
-
+	pl(name + ": Nice to meet you too!")
 	sleeps(1)
 	td()
-	pl("Josh: Mm.. Have you ever heard of a game called osu?")
+	pl("Josh: Mm.. Sorry if this seems out of context, but have you ever heard of a game called osu?")
 	sleepm(600)
 	var playOsuString string
 	p(name + ": ")
@@ -59,26 +68,32 @@ func main() {
 		playOsu = strings.ToLower(playOsu)
 
 		if playOsu[0] == 'y' {
-			sleepm(1500)
+			sleeps(2)
 			pl("Josh: Oh! Holy shit! You're the first person I've met that actually plays the game!")
-			sleepm(1500)
+			sleeps(2)
 			pl(name + ": Haha, yea, not a lot of people know about it, and even less play it.")
 		} else {
 			sleeps(2)
 			pl("Josh: Aw.. Damn.. I really wante to meet someone else that played it..")
-			sleeps(2)
+			sleeps(3)
 			pl("Josh: Anyways.. I've got to head home. See you around!")
-			end()
+			sleepm(1500)
+			pl(name + ": Yea dude, have a good one!")
+			sleeps(1)
+			softEnd()
 		}
 	} else {
 		sleeps(2)
 		pl("Josh: Aw.. Damn.. I really wanted to meet someone else that played it..")
 		sleeps(2)
 		pl("Josh: Anyways.. I've got to head home. See you around!")
-		end()
+		sleepm(1500)
+		pl(name + ": Yea dude, have a good one!")
+		sleeps(1)
+		softEnd()
 	}
 	sleepm(1500)
-	pl("Josh: So, since we both play osu!.. Whos your favourite player?")
+	pl("Josh: So, since we both play osu!.. Who's your favourite player?")
 	sleepm(600)
 	p(name + ": ")
 	var favourite string
@@ -112,7 +127,7 @@ func main() {
 		pl("Josh: :^)")
 	case "solis":
 		kill = false
-		pl("Josh: oh yeah dude solis is my favourite relax cheater too :)")
+		pl("Josh: oh yeah dude solis is my favourite relax cheater too :^)")
 	case "cmyui":
 	case "chase":
 		kill = false
@@ -495,6 +510,13 @@ func realEnd() {
 	sleeps(3)
 	CallClear()
 	pl("Congratulations! You've reached the end of the game.. for now.. Feel free to contribute, or just tell cmyui you've reached this point,\nas theres only a few that have <3")
+	sleeps(10)
+	os.Exit(3)
+}
+func softEnd() {
+	sleeps(3)
+	CallClear()
+	pl("Game Over")
 	sleeps(10)
 	os.Exit(3)
 }
