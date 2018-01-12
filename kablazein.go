@@ -361,7 +361,7 @@ var x int
 func realEnd() {
 	sleeps(3)
 	CallClear()
-	fmt.Println("Congratz, you've reached the end of the game.. for now.. Feel free to contribute, or just tell cmyui you've reached this point,\nas theres only a few that have <3")
+	fmt.Println("Congratulations! You've reached the end of the game.. for now.. Feel free to contribute, or just tell cmyui you've reached this point,\nas theres only a few that have <3")
 	sleeps(10)
 	os.Exit(3)
 }
