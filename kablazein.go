@@ -14,8 +14,8 @@ func main() {
 	fmt.Println("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
 	sleeps(10)
 	CallClear()
-	fmt.Println("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you \ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos. \nA man in a hoodie and slick black sweatpants approaches you.")
-	sleeps(1)
+	fmt.Println("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos. \nA man in a hoodie and slick black sweatpants approaches you.")
+	sleeps(4)
 	fmt.Println("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
 	sleepm(600)
 	var name string
