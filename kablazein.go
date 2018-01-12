@@ -11,69 +11,69 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
+	pl("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
 	sleeps(10)
 	CallClear()
-	fmt.Println("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos. \nA man in a hoodie and slick black sweatpants approaches you.")
+	pl("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos. \nA man in a hoodie and slick black sweatpants approaches you.")
 	sleeps(4)
-	fmt.Println("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
+	pl("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
 	sleepm(600)
 	var name string
 	reader := bufio.NewReader(os.Stdin)
 	bytes, _, _ := reader.ReadLine()
 	name = string(bytes)
-	fmt.Println(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
+	pl(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
 
 	if name == "josh" && name == "Josh" {
 		sleepm(1400)
-		fmt.Println("F͍̖̣̿̃ͅͅͅÙ̖C̜̯̤̗̓ͤ̉͆ͅͅK̝͓ͪͮ ͖̓ͧ̋O͓̺̟̜̦̽ͣ͗́̀̚F̥̘͖ͯͩ̀̑͑̓̚F̝͑͑ͪ̇̊͌ͥ ̰̇A̫͍̠͙͚̟N̳͓̟͖̎̊ͅD͇̼̠̱̱̩̙̈̓ͣ̏ ̪̗ͫ̅Nͣ̌ͬͬ̔̈E͕̱͚̗̠̠ͨ͑̀̉̌V̫͖̲̟̹͖E̬͕͕͈R͎͉ ̤̹̙̲R̪̳ͯ͛̃ͦ̎ͫ̌E̖̝͈̱͈̫͓͑ͪ̓ͬͨ̊T̬͓͖͓̠̗͎̔̃U̖ͧ̄̔R̤̰̼͎͆̇̋ͧ̒̿ͯNͮ̉")
+		pl("F͍̖̣̿̃ͅͅͅÙ̖C̜̯̤̗̓ͤ̉͆ͅͅK̝͓ͪͮ ͖̓ͧ̋O͓̺̟̜̦̽ͣ͗́̀̚F̥̘͖ͯͩ̀̑͑̓̚F̝͑͑ͪ̇̊͌ͥ ̰̇A̫͍̠͙͚̟N̳͓̟͖̎̊ͅD͇̼̠̱̱̩̙̈̓ͣ̏ ̪̗ͫ̅Nͣ̌ͬͬ̔̈E͕̱͚̗̠̠ͨ͑̀̉̌V̫͖̲̟̹͖E̬͕͕͈R͎͉ ̤̹̙̲R̪̳ͯ͛̃ͦ̎ͫ̌E̖̝͈̱͈̫͓͑ͪ̓ͬͨ̊T̬͓͖͓̠̗͎̔̃U̖ͧ̄̔R̤̰̼͎͆̇̋ͧ̒̿ͯNͮ̉")
 		end()
 	}
 
 	sleeps(1)
-	fmt.Println("Josh: Mm.. Have you ever heard of a game called osu?")
+	pl("Josh: Mm.. Have you ever heard of a game called osu?")
 	sleepm(600)
 	var playOsuString string
-	fmt.Print(name + ": ")
+	p(name + ": ")
 	pos, _, _ := reader.ReadLine()
 	playOsuString = string(pos)
 	playOsuString = strings.ToLower(playOsuString)
 
 	if playOsuString[0] == 'y' {
 		sleeps(1)
-		fmt.Println("Josh: Oh wow, really?")
+		pl("Josh: Oh wow, really?")
 		sleeps(2)
-		fmt.Println("Josh: Do you actually play the game?")
+		pl("Josh: Do you actually play the game?")
 		sleepm(600)
 		var playOsu string
-		fmt.Print(name + ": ")
+		p(name + ": ")
 		po, _, _ := reader.ReadLine()
 		playOsu = string(po)
 		playOsu = strings.ToLower(playOsu)
 
 		if playOsu[0] == 'y' {
 			sleepm(1500)
-			fmt.Println("Josh: Oh! Holy shit! You're the first person I've met that actually plays the game!")
+			pl("Josh: Oh! Holy shit! You're the first person I've met that actually plays the game!")
 			sleepm(1500)
-			fmt.Println(name + ": Haha, yea, not a lot of people know about it, and even less play it.")
+			pl(name + ": Haha, yea, not a lot of people know about it, and even less play it.")
 		} else {
 			sleeps(2)
-			fmt.Println("Josh: Aw.. Damn.. I really wante to meet someone else that played it..")
+			pl("Josh: Aw.. Damn.. I really wante to meet someone else that played it..")
 			sleeps(2)
-			fmt.Println("Josh: Anyways.. I've got to head home. See you around!")
+			pl("Josh: Anyways.. I've got to head home. See you around!")
 			end()
 		}
 	} else {
 		sleeps(2)
-		fmt.Println("Josh: Aw.. Damn.. I really wanted to meet someone else that played it..")
+		pl("Josh: Aw.. Damn.. I really wanted to meet someone else that played it..")
 		sleeps(2)
-		fmt.Println("Josh: Anyways.. I've got to head home. See you around!")
+		pl("Josh: Anyways.. I've got to head home. See you around!")
 		end()
 	}
 	sleepm(1500)
-	fmt.Println("Josh: So, since we both play osu!.. Whos your favourite player?")
+	pl("Josh: So, since we both play osu!.. Whos your favourite player?")
 	sleepm(600)
-	fmt.Print(name + ": ")
+	p(name + ": ")
 	var favourite string
 	var kill bool
 	fa, _, _ := reader.ReadLine()
@@ -84,31 +84,31 @@ func main() {
 	case "kablaze":
 		kill = false
 		sleeps(1)
-		fmt.Println("Josh: Wait.. what?")
+		pl("Josh: Wait.. what?")
 		sleeps(2)
-		fmt.Println("Josh: Really..?")
+		pl("Josh: Really..?")
 		sleeps(2)
-		fmt.Println("Josh: Huh.. He's actually probably my favourite aswell..")
+		pl("Josh: Huh.. He's actually probably my favourite aswell..")
 		sleeps(2)
-		fmt.Println("Josh: I think he's a really unrated and undervalued player overall..")
+		pl("Josh: I think he's a really unrated and undervalued player overall..")
 		sleeps(3)
-		fmt.Println("Josh: Well, thats sortof his fault.. He doesn't really put himself 'out there' very much..")
+		pl("Josh: Well, thats sortof his fault.. He doesn't really put himself 'out there' very much..")
 		sleeps(2)
 	case "cookiezi":
 		kill = false
-		fmt.Println("Josh: Haha. Yea, I definitely can't blame you for that one. I definitely think hes the BEST player,")
+		pl("Josh: Haha. Yea, I definitely can't blame you for that one. I definitely think hes the BEST player,")
 		sleeps(1)
-		fmt.Println("Josh: Although, he's not my favourite..")
+		pl("Josh: Although, he's not my favourite..")
 	case "howl":
 		kill = false
-		fmt.Println("Josh: :^)")
+		pl("Josh: :^)")
 	case "solis":
 		kill = false
-		fmt.Println("Josh: oh yeah dude solis is my favourite relax cheater too :)")
+		pl("Josh: oh yeah dude solis is my favourite relax cheater too :)")
 	case "cmyui":
 	case "chase":
 		kill = false
-		fmt.Println("Josh: <3")
+		pl("Josh: <3")
 	case "rafis", "azerite", "zirba", "hvick", "hvick225", "bubbleman",
 		"rohulk", "angelsim", "emilia", "woey", "osu player84", "mathi",
 		"totoki", "_ryuk", "ryuk", "mcy3", "spare", "danyl", "piggey",
@@ -118,61 +118,61 @@ func main() {
 		"flyingtuna", "thepoon", "recia", "dumii", "mlaw22", "mlaw", "mshake",
 		"xilver", "ceptin", "plz enjoy game", "apraxia", "doomsday":
 		kill = false
-		fmt.Println("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
+		pl("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
 		sleeps(1)
-		fmt.Println("Josh: He's not my favourite, but he's definitely up there.")
+		pl("Josh: He's not my favourite, but he's definitely up there.")
 	case "rrtyui":
 		kill = false
-		fmt.Println("Josh: Meh.. Irrelevant trash player, but i'll let it slide..")
+		pl("Josh: Meh.. Irrelevant trash player, but i'll let it slide..")
 	default:
 		kill = true
 		sleeps(1)
-		fmt.Println("Josh: ..")
+		pl("Josh: ..")
 		sleeps(2)
-		fmt.Println("Josh: Who..?")
+		pl("Josh: Who..?")
 		sleeps(1)
-		fmt.Println("Josh: Oh well.. whatever.. It's not like I cared anyways")
+		pl("Josh: Oh well.. whatever.. It's not like I cared anyways")
 		sleeps(4)
 	}
 	if kill == true {
-		fmt.Println("Josh: Actually what the fuck? How do you not appreciate any good players?")
+		pl("Josh: Actually what the fuck? How do you not appreciate any good players?")
 		sleeps(3)
-		fmt.Println("I literally have no idea who you're even talking about. What the hell is wrong with you??")
+		pl("I literally have no idea who you're even talking about. What the hell is wrong with you??")
 		sleeps(3)
-		fmt.Println("Josh: Are you mentally insane? I don't understand your thinking")
+		pl("Josh: Are you mentally insane? I don't understand your thinking")
 		sleeps(3)
-		fmt.Println("Johs: Yea.. You're probably insane. You should go get that checked out..")
+		pl("Johs: Yea.. You're probably insane. You should go get that checked out..")
 		sleeps(3)
-		fmt.Println("josh: Dude go to the hospital already what the hell are you doing")
+		pl("josh: Dude go to the hospital already what the hell are you doing")
 		sleeps(3)
-		fmt.Println("Josh: You're clearly stupid and delusional if you don't think kablaze, cmyui, or cookiezi is the best player.")
+		pl("Josh: You're clearly stupid and delusional if you don't think kablaze, cmyui, or cookiezi is the best player.")
 		sleeps(2)
-		fmt.Println("J̢̙̮̙̮̬͍̰̺̗͚̥̠͉̹̙͕̹ͅͅoŞ̧̡̨͍̘̖̭̭̗͕̫̭͉̰̥͎͈̻͈h͙̖͇̘̱̦̩̱̞̝̞̬̯̣̹̞̰͉̮̯:͇̱̬͎̣ ̢̰͕̟̪̹̯͍̥͍͍̤̺̫̱̟̟͚̰͜W̡̡͕̺̬̠Ḩ͍̬̠͖̲̝̼̗͙̤̞̤̗̹̰̩̣͜͜Y̧̧̢̧̡̧̹̲̖̺̩̲̞͙̹̬̭̦̣ͅ ̡̢̫̺̥̦̘̻͔̦͔̙̣̝͔͓̫̭̤ͅA̢̡̧̡̼̰̬̗͚͔̠̜̺̲̝̯͕̫͓̭�̧̨̮̲͈̭͚̗̗̗̠̺̱̳͙̣͇̼͖̳�̡̧̧̨̙͉͇̲̗̣̹͙͇̤̜̣̖̟̩̠�̢̠͉̯͇̰͓͔̞̯̺̥̝͉̤͍̳̞͔̮R̺̭͇̼͖Ȩ̞̮̭̩͇̟̥̥̠̖̟̲̮̖̰͔͜ͅO̢̢̫͍̲͇̘̦̮̘͙̙̼̳͙̤͙̞͕̹U̡̥͇͔̞̝̝̩͇͍͔̰̭̜̯̫̯͇͜͜�̢̧̢̧͎̻̘͚̣̻͎̮͇̟̖̺̯͖̭̟  ̨̻̗̭̭͇̘̼̹͍͙͖̬̤̞̼͕ͅE̢̠͔̬̳̙͖̰̭̺̪̗̠̲̘͚̞̗̭͜Ã͕̦̯̜̺͉͎͇̜̟͔͎̬̞̘̹̞̘̥ͅ³̢̯̘̼̯̤̭̬̳̟̫̲͓ķ̫̫̞͈̳̜̦̳̤̺͕̪̥̲̟̰̹͜ͅǫ̡̙̣̯̤̘͔͙̙͎̹̪̞̻̟̬̣͙͜r͚̥̙̘̪ͅȨ̮̥͇̤͉͍̦̞̹͉̞̹̳̤̣̫̜̻̬?̢̝̬̹̣̝͓͍̹̱̺̩̪̺̤̭̗͉̩̞?̨̡̙̮͖̞̟͙̺͖̩̭̻̯͓̖͉̺̦͜")
+		pl("J̢̙̮̙̮̬͍̰̺̗͚̥̠͉̹̙͕̹ͅͅoŞ̧̡̨͍̘̖̭̭̗͕̫̭͉̰̥͎͈̻͈h͙̖͇̘̱̦̩̱̞̝̞̬̯̣̹̞̰͉̮̯:͇̱̬͎̣ ̢̰͕̟̪̹̯͍̥͍͍̤̺̫̱̟̟͚̰͜W̡̡͕̺̬̠Ḩ͍̬̠͖̲̝̼̗͙̤̞̤̗̹̰̩̣͜͜Y̧̧̢̧̡̧̹̲̖̺̩̲̞͙̹̬̭̦̣ͅ ̡̢̫̺̥̦̘̻͔̦͔̙̣̝͔͓̫̭̤ͅA̢̡̧̡̼̰̬̗͚͔̠̜̺̲̝̯͕̫͓̭�̧̨̮̲͈̭͚̗̗̗̠̺̱̳͙̣͇̼͖̳�̡̧̧̨̙͉͇̲̗̣̹͙͇̤̜̣̖̟̩̠�̢̠͉̯͇̰͓͔̞̯̺̥̝͉̤͍̳̞͔̮R̺̭͇̼͖Ȩ̞̮̭̩͇̟̥̥̠̖̟̲̮̖̰͔͜ͅO̢̢̫͍̲͇̘̦̮̘͙̙̼̳͙̤͙̞͕̹U̡̥͇͔̞̝̝̩͇͍͔̰̭̜̯̫̯͇͜͜�̢̧̢̧͎̻̘͚̣̻͎̮͇̟̖̺̯͖̭̟  ̨̻̗̭̭͇̘̼̹͍͙͖̬̤̞̼͕ͅE̢̠͔̬̳̙͖̰̭̺̪̗̠̲̘͚̞̗̭͜Ã͕̦̯̜̺͉͎͇̜̟͔͎̬̞̘̹̞̘̥ͅ³̢̯̘̼̯̤̭̬̳̟̫̲͓ķ̫̫̞͈̳̜̦̳̤̺͕̪̥̲̟̰̹͜ͅǫ̡̙̣̯̤̘͔͙̙͎̹̪̞̻̟̬̣͙͜r͚̥̙̘̪ͅȨ̮̥͇̤͉͍̦̞̹͉̞̹̳̤̣̫̜̻̬?̢̝̬̹̣̝͓͍̹̱̺̩̪̺̤̭̗͉̩̞?̨̡̙̮͖̞̟͙̺͖̩̭̻̯͓̖͉̺̦͜")
 		sleepm(800)
-		fmt.Println("jalapeÃ±o: L E A V E")
+		pl("jalapeÃ±o: L E A V E")
 		sleepm(800)
 		count := 1
 		for count < 20 {
-			fmt.Println("\n� /? / ? LFKS�?fsajj �")
+			pl("\n� /? / ? LFKS�?fsajj �")
 			count++
 		}
 		end()
 	}
 
 	sleeps(2)
-	fmt.Println("Josh: To be honest, i'm amazed you've made it this far..")
+	pl("Josh: To be honest, i'm amazed you've made it this far..")
 	sleeps(2)
-	fmt.Println(name + ": What?")
+	pl(name + ": What?")
 	sleeps(2)
-	fmt.Println("Josh: mm.. Nothing.. It's almost like you're trying to read my mind is all..")
+	pl("Josh: mm.. Nothing.. It's almost like you're trying to read my mind is all..")
 	sleeps(2)
-	fmt.Println(name + ": Uh.. Sorry I'm not sure I know what you're talking about..")
+	pl(name + ": Uh.. Sorry I'm not sure I know what you're talking about..")
 	sleeps(2)
-	fmt.Println("Josh: heh... Of course not..")
+	pl("Josh: heh... Of course not..")
 	sleeps(4)
-	fmt.Println("Josh: Have you ever heard of Akatsuki?")
+	pl("Josh: Have you ever heard of Akatsuki?")
 	sleepm(300)
-	fmt.Print(name + ": ")
+	p(name + ": ")
 	var akatsuki string
 	a, _, _ := reader.ReadLine()
 	akatsuki = string(a)
@@ -180,31 +180,31 @@ func main() {
 
 	if akatsuki[0] == 'y' {
 		sleeps(2)
-		fmt.Println("Josh: Yea.. It's been getting quite a lot of attention recently..")
+		pl("Josh: Yea.. It's been getting quite a lot of attention recently..")
 		sleeps(2)
-		fmt.Println("I'm actually the creator of it.. haha")
+		pl("I'm actually the creator of it.. haha")
 		sleeps(2)
-		fmt.Println(name + ": Oh dude, thats kind of cool.. although.. isnt it litrally just ripples code..?")
+		pl(name + ": Oh dude, thats kind of cool.. although.. isnt it litrally just ripples code..?")
 		sleeps(2)
-		fmt.Println("Josh: �.")
+		pl("Josh: �.")
 		sleeps(4)
-		fmt.Println("Jos�̡̢̡̝̥͇̠̗͖̙̹̥̩̣̻̞͎̜̹͇̻͚̖̭̖̟̼ͅh̨̢̨̨̭̞̖̲̝̭̠̜̳͔̱̫̞̼̠̖͎͎̠̰̦̦̬̭:̡̺̰̲̣̲̼̲̖͔̗̞̲͇͈̖̠̯̜̲̮̦̼̹̻̠̱ͅ ̡̧̢̢̟̩͈̞̳̙͔͔̜͓̼̥̭̝̘͔͓̝̻̪̯̯̹ͅI̧̻̯͍̜͓͈̹͖̰̬̪̹͇̱̝̣̥̠͙̣͉̲̠̺̠̲ͅ'̨̧̢̢̡̨̡̙̟̙̳̥͓͎̼̩̰̠̟̞̗͍̺͙̪̬̝ͅm̢̡̧̨̩̜̠̝̱͕̲̦͇̰̬͎͙̠̱̼̹̯̥̘̰͈̥̣ ̡̡̹͓̥̙̣̙͈͈̘̠̣̰̞͈͎̲̩̣̼͎̝̳̣͍͜ͅs̢̢̫̜̘͖̞̫̩̩̟̻͔̻̙̼̜͓̭̜͔̬͕̣͜͜ͅͅo̡̢̨̲̼͉͇̟͖̯̰͉̦͍̻͓̜̻̫͇͍͖̮̰͍̯͚͜ŗ̥͉̜̩̰͉̩̼͖̮̱̻͍̩͎̮͔͕̲͈̹͇̦̪ͅͅ    rRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-")
+		pl("Jos�̡̢̡̝̥͇̠̗͖̙̹̥̩̣̻̞͎̜̹͇̻͚̖̭̖̟̼ͅh̨̢̨̨̭̞̖̲̝̭̠̜̳͔̱̫̞̼̠̖͎͎̠̰̦̦̬̭:̡̺̰̲̣̲̼̲̖͔̗̞̲͇͈̖̠̯̜̲̮̦̼̹̻̠̱ͅ ̡̧̢̢̟̩͈̞̳̙͔͔̜͓̼̥̭̝̘͔͓̝̻̪̯̯̹ͅI̧̻̯͍̜͓͈̹͖̰̬̪̹͇̱̝̣̥̠͙̣͉̲̠̺̠̲ͅ'̨̧̢̢̡̨̡̙̟̙̳̥͓͎̼̩̰̠̟̞̗͍̺͙̪̬̝ͅm̢̡̧̨̩̜̠̝̱͕̲̦͇̰̬͎͙̠̱̼̹̯̥̘̰͈̥̣ ̡̡̹͓̥̙̣̙͈͈̘̠̣̰̞͈͎̲̩̣̼͎̝̳̣͍͜ͅs̢̢̫̜̘͖̞̫̩̩̟̻͔̻̙̼̜͓̭̜͔̬͕̣͜͜ͅͅo̡̢̨̲̼͉͇̟͖̯̰͉̦͍̻͓̜̻̫͇͍͖̮̰͍̯͚͜ŗ̥͉̜̩̰͉̩̼͖̮̱̻͍̩͎̮͔͕̲͈̹͇̦̪ͅͅ    rRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-")
 		end()
 	} else {
 		sleeps(2)
-		fmt.Println("Josh: Oh.. Yea it's an osu! private server I made using Ripple's source as a base..")
+		pl("Josh: Oh.. Yea it's an osu! private server I made using Ripple's source as a base..")
 		sleeps(2)
-		fmt.Println("Josh: It sortof gets a lot of hate due to the fact that most people just see it as a ripple clone..")
+		pl("Josh: It sortof gets a lot of hate due to the fact that most people just see it as a ripple clone..")
 		sleeps(2)
-		fmt.Println("Which I actually understand, and even agree with.. but I wish that people wouldn't spread so much hate about it..")
+		pl("Which I actually understand, and even agree with.. but I wish that people wouldn't spread so much hate about it..")
 		sleeps(2)
-		fmt.Println("Oh well.. This isn't the place to vent about that kind of stuff anyways..")
+		pl("Oh well.. This isn't the place to vent about that kind of stuff anyways..")
 		sleeps(2)
 	}
 
-	fmt.Println("Have you done anything interesting recently?")
+	pl("Have you done anything interesting recently?")
 	sleepm(600)
-	fmt.Print(name + ": ")
+	p(name + ": ")
 	var interesting string
 	in, _, _ := reader.ReadLine()
 	interesting = string(in)
@@ -212,7 +212,7 @@ func main() {
 
 	if interesting[0] == 'y' {
 		sleepm(900)
-		fmt.Println("Oh dude, tell me about it!")
+		pl("Oh dude, tell me about it!")
 		sleepm(600)
 		print(name + ": ")
 		var blabla string
@@ -222,90 +222,90 @@ func main() {
 
 		if blabla[0] == 'n' {
 			sleepm(900)
-			fmt.Println("ẅ̮̙̪͚̭̪̳͓̩́̐̈̎͊̌̃̊̀͗ͅĕ̮͉̖̫̣̱̦̰̜̽̑̿́͆̿̈͂͠ͅl̪͓̘̲̙͓̠̱̟̎͑̎̌̿͑̎͑̇̕ͅl̡̨͎̭͔̖̹̺̻̗̅̑̉̌̂́̄̒̎̕ ̢̗̞̻̟͓̘͖͎̲͆̒͌́͆̎͛̂͆͝f̹͙̗̲̝̮͎̮̜͎̆̎̉͌̊̈̃̍̎̚u̡̜̩̗̺̺̱̺͖̗̔̍̈̓̈́͒̎͛͝͝ç̬̪̟̟̤͙̹̟͔̽̋̀̈́͛̾͋̿̈͝k̦̥̩̬̞̗̟̳͎͇͒̓͗̊̾̿̒̈́̆̊ ̢̜͚̳̙̖͉͇͇͂̑̂̇̄͆̌̉̈́͘͜y̹̰͍͍̙̲̰̞̳͉͒̐̓̆̉̓̆̆̚͝o̞̫̻̗̖͎̬̝̝̽̐̈̆̔͑̾̎͘͝ͅu̠̞͕̮͎̫̦̻͈͔̐̆͊͋͛͛̎̔̏͝ ̨͙̳̝̭͚̰̲̰̘̋̾͐̌̅̈́̈̃͆͘ẗ̛̜̝̠̖̪̬̹̗͍̺͂͆͛́͂̒͊͘ơ̧̹͚͇̯͎͕̳̘͍͌̓̑̉̐͐̈́̊̋ǫ̧̡̟̟͇̥̯̠̱̈́͗̌͗̈́̒̍̉͝͠")
+			pl("ẅ̮̙̪͚̭̪̳͓̩́̐̈̎͊̌̃̊̀͗ͅĕ̮͉̖̫̣̱̦̰̜̽̑̿́͆̿̈͂͠ͅl̪͓̘̲̙͓̠̱̟̎͑̎̌̿͑̎͑̇̕ͅl̡̨͎̭͔̖̹̺̻̗̅̑̉̌̂́̄̒̎̕ ̢̗̞̻̟͓̘͖͎̲͆̒͌́͆̎͛̂͆͝f̹͙̗̲̝̮͎̮̜͎̆̎̉͌̊̈̃̍̎̚u̡̜̩̗̺̺̱̺͖̗̔̍̈̓̈́͒̎͛͝͝ç̬̪̟̟̤͙̹̟͔̽̋̀̈́͛̾͋̿̈͝k̦̥̩̬̞̗̟̳͎͇͒̓͗̊̾̿̒̈́̆̊ ̢̜͚̳̙̖͉͇͇͂̑̂̇̄͆̌̉̈́͘͜y̹̰͍͍̙̲̰̞̳͉͒̐̓̆̉̓̆̆̚͝o̞̫̻̗̖͎̬̝̝̽̐̈̆̔͑̾̎͘͝ͅu̠̞͕̮͎̫̦̻͈͔̐̆͊͋͛͛̎̔̏͝ ̨͙̳̝̭͚̰̲̰̘̋̾͐̌̅̈́̈̃͆͘ẗ̛̜̝̠̖̪̬̹̗͍̺͂͆͛́͂̒͊͘ơ̧̹͚͇̯͎͕̳̘͍͌̓̑̉̐͐̈́̊̋ǫ̧̡̟̟͇̥̯̠̱̈́͗̌͗̈́̒̍̉͝͠")
 			end()
 		}
 		sleepm(1500)
-		fmt.Println("Wow.. That's super cool! I hope I can do something like that someday..")
+		pl("Wow.. That's super cool! I hope I can do something like that someday..")
 		sleeps(1)
 	} else {
 		sleepm(600)
-		fmt.Println("Josh: Oh.. Well that kinda sucks.. I haven't done much either I guess..")
+		pl("Josh: Oh.. Well that kinda sucks.. I haven't done much either I guess..")
 		sleeps(2)
-		fmt.Println("Josh: Well.. At least other th�n the osu! server. But that wasn't even me really. I really owe it to Howl and Nyo.")
+		pl("Josh: Well.. At least other th�n the osu! server. But that wasn't even me really. I really owe it to Howl and Nyo.")
 		sleeps(2)
-		fmt.Println(name + ": Well.. Why not do something for them then..?")
+		pl(name + ": Well.. Why not do something for them then..?")
 		sleeps(2)
-		fmt.Println("mmm..")
+		pl("mmm..")
 		sleeps(2)
-		fmt.Println("Josh: I'm really now sure what I could even do.. One of their developers doesnt like me at all\nand I'm not sure what the other one thinks..")
+		pl("Josh: I'm really now sure what I could even do.. One of their developers doesnt like me at all\nand I'm not sure what the other one thinks..")
 		sleeps(4)
-		fmt.Println(name + ": Oh well Sucks lole")
+		pl(name + ": Oh well Sucks lole")
 		end()
 	}
 
-	fmt.Println(name + ": I'm sure you'll do alot more in your life. haha")
+	pl(name + ": I'm sure you'll do alot more in your life. haha")
 	sleeps(2)
-	fmt.Println("Josh: Yup.. Most likely. I'm just waiting for the day where I come out of my shell.")
+	pl("Josh: Yup.. Most likely. I'm just waiting for the day where I come out of my shell.")
 	sleeps(2)
-	fmt.Println("Josh: So.. Out of curiousity, are you any good at osu..? What's your rank?")
+	pl("Josh: So.. Out of curiousity, are you any good at osu..? What's your rank?")
 	sleepm(600)
-	fmt.Print(name + ": ")
+	p(name + ": ")
 	var rank int
 	var digit int
 	fmt.Scanln(&rank)
 	if rank >= 100000 {
 		digit = 6
 		sleepm(400)
-		fmt.Println("Josh: Oh, so you're still pretty new to the game then!")
+		pl("Josh: Oh, so you're still pretty new to the game then!")
 		sleepm(1200)
-		fmt.Println("Josh: I remember when I was that rank.. I first got my tablet right around 250k, haha")
+		pl("Josh: I remember when I was that rank.. I first got my tablet right around 250k, haha")
 	} else if rank > 10000 {
 		digit = 5
 		sleepm(400)
-		fmt.Println("Josh: Oh. So you've been playing for a bit, I guess. Still pretty new though, haha.")
+		pl("Josh: Oh. So you've been playing for a bit, I guess. Still pretty new though, haha.")
 		sleepm(1200)
-		fmt.Println("Josh: You'll probably start to see a slowdown in progress around the rank you're at now though. That's when it starts to actually get difficult..")
+		pl("Josh: You'll probably start to see a slowdown in progress around the rank you're at now though. That's when it starts to actually get difficult..")
 	} else if rank >= 3000 {
 		digit = 4
 		sleepm(400)
-		fmt.Println("Josh: Oh damn.. You're catching up to me.. I got banned at about 2.9k, but that was after 2 cheated plays.. In reality i'm probably around there now.")
+		pl("Josh: Oh damn.. You're catching up to me.. I got banned at about 2.9k, but that was after 2 cheated plays.. In reality i'm probably around there now.")
 		sleepm(1200)
-		fmt.Println("Josh: Best of lucking kicking my ass, haha.")
+		pl("Josh: Best of lucking kicking my ass, haha.")
 	} else if rank >= 1000 {
 		digit = 4
 		sleepm(400)
-		fmt.Println("Josh: Oh damn, you're a bit further than I am then..")
+		pl("Josh: Oh damn, you're a bit further than I am then..")
 		sleepm(1200)
-		fmt.Println("Josh: We might actually be able to compete, I'll be sure to try to snipe some of your scores, haha")
+		pl("Josh: We might actually be able to compete, I'll be sure to try to snipe some of your scores, haha")
 	} else if rank >= 100 {
 		digit = 3
 		sleepm(400)
-		fmt.Println("Josh: Oh wow.. You're really good damn. I hope I'll reach that sort of level one day..")
+		pl("Josh: Oh wow.. You're really good damn. I hope I'll reach that sort of level one day..")
 		sleepm(1200)
-		fmt.Println("Josh: Not sure if I can, but I think it's a good goal.")
+		pl("Josh: Not sure if I can, but I think it's a good goal.")
 	} else if rank >= 35 {
 		sleepm(400)
-		fmt.Println("Jo�h: ?  ????????? ? ?       ????????????  ?  ? ? ???\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? �?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? �?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? ?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? ?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? ?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? ?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?")
+		pl("Jo�h: ?  ????????? ? ?       ????????????  ?  ? ? ???\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? �?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? �?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? ?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? ?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? ?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? ?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?")
 		end()
 	} else if rank >= 20 {
 		digit = 2
 		sleepm(400)
-		fmt.Println("Josh: Bro im finna smash ur ass like grass at ANIME NORTH CON 2018 :^)")
+		pl("Josh: Bro im finna smash ur ass like grass at ANIME NORTH CON 2018 :^)")
 	} else {
 		sleepm(400)
 		var count int
 		count = 0
 		for count < 20 {
-			fmt.Println("\nJo̧̡̧̨̨̧̧̢͓͓̼̘̝͇͈͍̼͓̦̟̝͉͍͍̬͈͔̜̥̜̱͕̲̲̗̥̖̻̦̠̠̹̣̣͖̞̺̻͖̤̪̭̳͖͈͚̦̳͔̥̰̜̪̩̱̗͚̞̯̘̮͕͔͙͍̭͙̳̺̱̥̣̗͖͙͎̥̣̭̞͇̦̠̘̥͜ͅͅͅͅ࿊hs�h: loO  Le h�e SDlo i am   coo   kiez i xDD℻DS�႟DDSD��᥀᥀℆℆℆D")
+			pl("\nJo̧̡̧̨̨̧̧̢͓͓̼̘̝͇͈͍̼͓̦̟̝͉͍͍̬͈͔̜̥̜̱͕̲̲̗̥̖̻̦̠̠̹̣̣͖̞̺̻͖̤̪̭̳͖͈͚̦̳͔̥̰̜̪̩̱̗͚̞̯̘̮͕͔͙͍̭͙̳̺̱̥̣̗͖͙͎̥̣̭̞͇̦̠̘̥͜ͅͅͅͅ࿊hs�h: loO  Le h�e SDlo i am   coo   kiez i xDD℻DS�႟DDSD��᥀᥀℆℆℆D")
 			count++
 		}
 		end()
 	}
 	sleeps(1)
-	fmt.Println("Josh: Anyways, I've got to go home.. Do you use discord by any chance?")
+	pl("Josh: Anyways, I've got to go home.. Do you use discord by any chance?")
 	sleepm(600)
-	fmt.Print(name + ": ")
+	p(name + ": ")
 	var haveDiscord string
 	hd, _, _ := reader.ReadLine()
 	haveDiscord = string(hd)
@@ -313,135 +313,135 @@ func main() {
 
 	if haveDiscord[0] == 'y' {
 		sleepm(600)
-		fmt.Println("Josh: Oh, sweet! What's your ID? Mine is cmyui#5585")
+		pl("Josh: Oh, sweet! What's your ID? Mine is cmyui#5585")
 		sleepm(300)
 	} else {
 		sleepm(600)
-		fmt.Println("Josh: Oh damn.. Well.. Maybe we'll meet again one day, haha.")
+		pl("Josh: Oh damn.. Well.. Maybe we'll meet again one day, haha.")
 		sleeps(1)
-		fmt.Println(name + ": Maybe.. Well.. See ya!")
+		pl(name + ": Maybe.. Well.. See ya!")
 		sleeps(1)
-		fmt.Println("Josh: Cya!")
+		pl("Josh: Cya!")
 		end()
 	}
 	var discord string
-	fmt.Print(name + "Yea sure, mines: ")
+	p(name + "Yea sure, mines: ")
 	d, _, _ := reader.ReadLine()
 	discord = string(d)
 	discord = strings.ToLower(discord)
 	switch discord {
 	case "cmyui#5585":
-		fmt.Println("J̢̢̧̨̨͓̱̹̝̣̳̥͎̯̫̣̭͇̗̮͚̼̬͈͕̫̲̩̮̠̖̗̺̘͉̝͍͙͇̼̥͖͙͇̖̬̤̘̭̠͜͜͜ͅS̢̧͚̰͔̰̮̞͕͇͉̪̝̼̟̜̠̟̻̬͎̠̲̘̭̹̗͓̺̱̹̤͎̤̲̣̳̯̺̖̪͜ͅH̨̠̫̤̹̞͙͉͈̻͓̬̩̲̖̜̰̦̥̬̙͚̥͙̥̹̠̣̝̖͖̰̜͎̮͜ͅͅ℆̨̨̢̨̢̨̨̨͙͙̘͓͖̜̹̯̥̪͍̫̗̝̬͖̬̞̰͖̭̝̮̫̤̫̦̩͙̝̞̟͇͉̟̹̤̙̞̺̖̤̳̲̣̟̹͍̦͙̫͚̣̜͕̜͕͔̙̤̥̻̝͓̝͓̙̞̹̺͇̠̟̬̬͎̰͖͙̝̫̫͎̟͓̩͍͕͜͜ͅͅS̢̡̡̨̧̢̡͈̜̩͓͍̰͚̪̰͓̲̦̺̦̬̜̝͍̙̜͕̥̟̼͈̣̟̥̼̤̤̤̮͎̱̻̻͈̹͎̘̺͉̞̯͎͈̘̹͔̼̭̳̖͈̞͇͉͓̹̣͔̭̪͔̠̞̫̯̥̼͉͍͉͍͜͜͜ͅͅ ̨̡̧̡̣͙̳͓͖͙͈̭̤͖͍̘͈̠͕̤͈͎̙̦̩̯̜͔͙̜̦͖̻̪͙̙̲̟̱̝̝͜ͅJ̡̢̡̧̨̨̨͉̩̥͙̞̫̥̥̜̼̩̤̮̣̳̥̰̖͍̲̮̗̖̭͈̗̻̮͍̼̯̰̣̪͔̱̤̗̟̝̝͔̖̻̣̼̹͚̰̬̻̪̣̳̥̜̗͔̭̠̲͙̠̥̟͖̟͈̗̘͍̰̰͎̦͚̤̼͓̹͈͜͜ͅH̨̧̡̨̡̧̨̡̢̧̢̟͉͓̤̞̭̥̘̦̜͓͉̘̣͖͕̥̜̣͉̟̣̣̞͔͉̳̠͓͍̦̘̳̬͙̟̣͍̩͎̯͉̹͚̗͖̦͇͖͖̻̩͍͕̹̪̲̳͍̭̟̬̖͍͕̠͍̲̹͕̪̳̺̭̟̱͕͖̙̯̙͔̲̫͜ͅͅͅͅ ̧̧̡̢̢̧̧̡̡̨̨̡̧͉͕͚̘̞̭̻̫̺͔̠̜̝̭̟̬͓̝̘̯̙̬̰̞̯̫͔̼̼͈̰͖͍̗̯̳̗̮̗̣̹̗͉̻͕̟̼̦͔͇̩̝̥̹̖̰̥͎͕̮̗̜̭̬̻̹̙̖͇͔̱͙̙̗̮̜̜̗̰̟̥͕͜͜͜ͅͅą̨̨̧̨̢̡̧̨̡̧͈̼̹̟̭̣͈̟̰̣͔̘̲̘͚̫̥͈̲͓͈̝̺̳̪͕̗̻͈̱̠̩͚͙͍̜̦͓͍̜̝̹̙̺͕̺̻̝͔̺͕͚̤̟͖̪͉ͅͅͅy̡̢̡̢̢̧̢̢̢̢̨̻̣̜̫͈̥̗̭̱̼̗̪̯̹͓̝͇̙͇̞͈͓̘̣͚͔͍̺̲̳̦̤̖͔̼͓̝̣̩͖̬̜̹͕̺̜̬͉̺̙̰̘̟̫̦͓̩̦̦̻̮̖̗͔͈̠̺͓̹̥̦̫͙͇̯̟͔̥̥̺̞͚̜̘̲̝̖̘͕̣̯̻̳̻͇͎̭͎̣̳͚͎͜͜͜͜͜͜͜͜͜ͅͅͅͅͅb̨̡̢̨̡̢̢̡̨̡̢̡̥̦̫̫̤͉̤͓͕̲̩̭̠͖͍̹̝͙̹̥̱̟̹͍̙̻̥̻̳̠̟̙͕̮̮̪͈͔̰̰̮͍̪̻͕̗̱̠͈̤̪͇̳͔̲̭̗̜͖̬͕̝̤̳͎̝͙̩͚͜ͅͅF̢̡̧̡̧̧̣̪̜͙͖̱̺̞͙͙̼̫̲̞̭͔̳̫̦̲̰̹̥̟̹͓͈̜̝͉͚͎̫͕̖̟̗͖͓̦̙̜͓̝̥͖̺͉̱͕̘̭͓̬̙̠̠̯͜͜ͅy̧̢̺̲͔̠̮̬̬͇̦̼͖̤͙̗̻͇̬̞̲͙̮̳̼̙̠̭̫̮̱̳͓͉̜̜̮̣̣̞̘͓͎ͅͅ\n̢̢̡̡̡̟̟̰̪̩͇̝̻͔̪̖̲͔̮̰̞̫͕̙͚̮̹͕͈̩̼͕͚̗̗͚͖͚̼̜͉͔͓̺̣̬̜̱͇̤̙̲̖̰̳̼̮͔̱̹̬̱̥̰̞̥̰̻̰̣̟͖͚̰̺̜̜̟͎̼̯̹̙͜ǫ̨̨̨̢̡̡̨̧̢̧̟̙̰̘͎͈̮̟͕̜̱̥̞͕̙͖͉̬̞͎̟̣̫̱̼̘̭̝̙̲̗̭̠͍̹͙̬͔̭̰̖̯̞̩̩͇̲̜͈͔̪̮͎̮̬̱͖̱͓͕̪̜̱̪̖͈͙̣̜͍̣̰͈̱̼͓̹̩̙͜͜͜͜ͅͅͅͅͅͅ.")
+		pl("J̢̢̧̨̨͓̱̹̝̣̳̥͎̯̫̣̭͇̗̮͚̼̬͈͕̫̲̩̮̠̖̗̺̘͉̝͍͙͇̼̥͖͙͇̖̬̤̘̭̠͜͜͜ͅS̢̧͚̰͔̰̮̞͕͇͉̪̝̼̟̜̠̟̻̬͎̠̲̘̭̹̗͓̺̱̹̤͎̤̲̣̳̯̺̖̪͜ͅH̨̠̫̤̹̞͙͉͈̻͓̬̩̲̖̜̰̦̥̬̙͚̥͙̥̹̠̣̝̖͖̰̜͎̮͜ͅͅ℆̨̨̢̨̢̨̨̨͙͙̘͓͖̜̹̯̥̪͍̫̗̝̬͖̬̞̰͖̭̝̮̫̤̫̦̩͙̝̞̟͇͉̟̹̤̙̞̺̖̤̳̲̣̟̹͍̦͙̫͚̣̜͕̜͕͔̙̤̥̻̝͓̝͓̙̞̹̺͇̠̟̬̬͎̰͖͙̝̫̫͎̟͓̩͍͕͜͜ͅͅS̢̡̡̨̧̢̡͈̜̩͓͍̰͚̪̰͓̲̦̺̦̬̜̝͍̙̜͕̥̟̼͈̣̟̥̼̤̤̤̮͎̱̻̻͈̹͎̘̺͉̞̯͎͈̘̹͔̼̭̳̖͈̞͇͉͓̹̣͔̭̪͔̠̞̫̯̥̼͉͍͉͍͜͜͜ͅͅ ̨̡̧̡̣͙̳͓͖͙͈̭̤͖͍̘͈̠͕̤͈͎̙̦̩̯̜͔͙̜̦͖̻̪͙̙̲̟̱̝̝͜ͅJ̡̢̡̧̨̨̨͉̩̥͙̞̫̥̥̜̼̩̤̮̣̳̥̰̖͍̲̮̗̖̭͈̗̻̮͍̼̯̰̣̪͔̱̤̗̟̝̝͔̖̻̣̼̹͚̰̬̻̪̣̳̥̜̗͔̭̠̲͙̠̥̟͖̟͈̗̘͍̰̰͎̦͚̤̼͓̹͈͜͜ͅH̨̧̡̨̡̧̨̡̢̧̢̟͉͓̤̞̭̥̘̦̜͓͉̘̣͖͕̥̜̣͉̟̣̣̞͔͉̳̠͓͍̦̘̳̬͙̟̣͍̩͎̯͉̹͚̗͖̦͇͖͖̻̩͍͕̹̪̲̳͍̭̟̬̖͍͕̠͍̲̹͕̪̳̺̭̟̱͕͖̙̯̙͔̲̫͜ͅͅͅͅ ̧̧̡̢̢̧̧̡̡̨̨̡̧͉͕͚̘̞̭̻̫̺͔̠̜̝̭̟̬͓̝̘̯̙̬̰̞̯̫͔̼̼͈̰͖͍̗̯̳̗̮̗̣̹̗͉̻͕̟̼̦͔͇̩̝̥̹̖̰̥͎͕̮̗̜̭̬̻̹̙̖͇͔̱͙̙̗̮̜̜̗̰̟̥͕͜͜͜ͅͅą̨̨̧̨̢̡̧̨̡̧͈̼̹̟̭̣͈̟̰̣͔̘̲̘͚̫̥͈̲͓͈̝̺̳̪͕̗̻͈̱̠̩͚͙͍̜̦͓͍̜̝̹̙̺͕̺̻̝͔̺͕͚̤̟͖̪͉ͅͅͅy̡̢̡̢̢̧̢̢̢̢̨̻̣̜̫͈̥̗̭̱̼̗̪̯̹͓̝͇̙͇̞͈͓̘̣͚͔͍̺̲̳̦̤̖͔̼͓̝̣̩͖̬̜̹͕̺̜̬͉̺̙̰̘̟̫̦͓̩̦̦̻̮̖̗͔͈̠̺͓̹̥̦̫͙͇̯̟͔̥̥̺̞͚̜̘̲̝̖̘͕̣̯̻̳̻͇͎̭͎̣̳͚͎͜͜͜͜͜͜͜͜͜ͅͅͅͅͅb̨̡̢̨̡̢̢̡̨̡̢̡̥̦̫̫̤͉̤͓͕̲̩̭̠͖͍̹̝͙̹̥̱̟̹͍̙̻̥̻̳̠̟̙͕̮̮̪͈͔̰̰̮͍̪̻͕̗̱̠͈̤̪͇̳͔̲̭̗̜͖̬͕̝̤̳͎̝͙̩͚͜ͅͅF̢̡̧̡̧̧̣̪̜͙͖̱̺̞͙͙̼̫̲̞̭͔̳̫̦̲̰̹̥̟̹͓͈̜̝͉͚͎̫͕̖̟̗͖͓̦̙̜͓̝̥͖̺͉̱͕̘̭͓̬̙̠̠̯͜͜ͅy̧̢̺̲͔̠̮̬̬͇̦̼͖̤͙̗̻͇̬̞̲͙̮̳̼̙̠̭̫̮̱̳͓͉̜̜̮̣̣̞̘͓͎ͅͅ\n̢̢̡̡̡̟̟̰̪̩͇̝̻͔̪̖̲͔̮̰̞̫͕̙͚̮̹͕͈̩̼͕͚̗̗͚͖͚̼̜͉͔͓̺̣̬̜̱͇̤̙̲̖̰̳̼̮͔̱̹̬̱̥̰̞̥̰̻̰̣̟͖͚̰̺̜̜̟͎̼̯̹̙͜ǫ̨̨̨̢̡̡̨̧̢̧̟̙̰̘͎͈̮̟͕̜̱̥̞͕̙͖͉̬̞͎̟̣̫̱̼̘̭̝̙̲̗̭̠͍̹͙̬͔̭̰̖̯̞̩̩͇̲̜͈͔̪̮͎̮̬̱͖̱͓͕̪̜̱̪̖͈͙̣̜͍̣̰͈̱̼͓̹̩̙͜͜͜͜ͅͅͅͅͅͅ.")
 		end()
 		break
 	case "kahri#9828", "Emily | Sunpy#5213", "Hanyeol 한열#8257", "Kip#1120", "Frosti#0602", "ninjin#3198", "Howl#0940":
-		fmt.Println("Josh: Huh.. That sounds oddly familliar..")
+		pl("Josh: Huh.. That sounds oddly familliar..")
 		sleeps(2)
-		fmt.Println("Josh: well, whatever.")
+		pl("Josh: well, whatever.")
 		break
 	default:
-		fmt.Println("Josh: Alright cool!")
+		pl("Josh: Alright cool!")
 		break
 	}
 	sleeps(1)
-	fmt.Println("Josh: I'll make sure to add you when I get on!")
+	pl("Josh: I'll make sure to add you when I get on!")
 	sleeps(2)
-	fmt.Println("Josh heads off towards his home, and I do the same..")
+	pl("Josh heads off towards his home, and I do the same..")
 	sleeps(1)
-	fmt.Println("..")
+	pl("..")
 	sleeps(1)
-	fmt.Println("..")
+	pl("..")
 	sleeps(1)
-	fmt.Println("..")
+	pl("..")
 	sleeps(1)
-	fmt.Println("..")
+	pl("..")
 	sleeps(1)
-	fmt.Println("..")
+	pl("..")
 	sleeps(1)
-	fmt.Println("I open my door, take a seat and turn on my PC.")
+	pl("I open my door, take a seat and turn on my PC.")
 	sleeps(1)
-	fmt.Println("Mmm.. It's been a long day..")
+	pl("Mmm.. It's been a long day..")
 	sleeps(2)
-	fmt.Println("Discord opens up, and I head to the Friends section, and see that cmyui#5585 has already added me as a friend.")
+	pl("Discord opens up, and I head to the Friends section, and see that cmyui#5585 has already added me as a friend.")
 	sleeps(2)
-	fmt.Println("I accept the request, and send him a PM saying 'Hey, long time no see, haha'")
+	pl("I accept the request, and send him a PM saying 'Hey, long time no see, haha'")
 	sleeps(3)
-	fmt.Println("5 minutes passes, and still no reply.. I assume he must be busy doing something, so I open up osu!")
+	pl("5 minutes passes, and still no reply.. I assume he must be busy doing something, so I open up osu!")
 	sleeps(2)
 	switch digit {
 	case 6:
-		fmt.Println("I've really been improving recently, even though im only a 6 digit, I think that I might be able to climb again now..")
+		pl("I've really been improving recently, even though im only a 6 digit, I think that I might be able to climb again now..")
 	case 5:
-		fmt.Println("I've really been improving recently, even though im only a 5 digit, I think that I might be able to climb again now..")
+		pl("I've really been improving recently, even though im only a 5 digit, I think that I might be able to climb again now..")
 	case 4:
-		fmt.Println("I've really been improving recently, even though im a 4 digit, I think that I might be able to climb again now..")
+		pl("I've really been improving recently, even though im a 4 digit, I think that I might be able to climb again now..")
 	case 3:
-		fmt.Println("I've really been improving recently, even though im already decent.. I think that I might be able to climb again now..")
+		pl("I've really been improving recently, even though im already decent.. I think that I might be able to climb again now..")
 	case 2:
-		fmt.Println("I've really been improving recently, even though im already so high in the rankings.. I think that I might be able to climb again now..")
+		pl("I've really been improving recently, even though im already so high in the rankings.. I think that I might be able to climb again now..")
 	}
 	sleeps(2)
-	fmt.Println("osu! boots up, and I realize that I never actually got to know how good Josh was..")
+	pl("osu! boots up, and I realize that I never actually got to know how good Josh was..")
 	sleeps(2)
-	fmt.Println("I hit F9 and search up his name, and sure enough, there he is. A 4 digit, rank #3482.")
+	pl("I hit F9 and search up his name, and sure enough, there he is. A 4 digit, rank #3482.")
 	sleeps(2)
 	switch digit {
 	case 6:
-		fmt.Println("Wow, what the hell? He's really good!")
+		pl("Wow, what the hell? He's really good!")
 	case 5:
-		fmt.Println("Wow.. That's really good..")
+		pl("Wow.. That's really good..")
 	case 4:
-		fmt.Println("Oh, so we're around the same skill. Neat.")
+		pl("Oh, so we're around the same skill. Neat.")
 	case 3:
-		fmt.Println("Oh, he's a bit worse than I am, haha.")
+		pl("Oh, he's a bit worse than I am, haha.")
 	case 2:
-		fmt.Println("Oh, he's decent I guess..")
+		pl("Oh, he's decent I guess..")
 	}
 	sleeps(2)
 	//Oh maybe I'll make this something identity theft something something idk im winging this while writing it.
-	fmt.Println("Hes playing a song, I guess that's why he didnt reply on discord.. Although that song is only a minute long.. weird..")
+	pl("Hes playing a song, I guess that's why he didnt reply on discord.. Although that song is only a minute long.. weird..")
 	sleeps(2)
-	fmt.Println("I send him a PM ingame")
+	pl("I send him a PM ingame")
 	sleeps(2)
-	fmt.Println(name + ": Hey!")
+	pl(name + ": Hey!")
 	sleeps(2)
-	fmt.Println("cmyui: uh.. do i know you?")
+	pl("cmyui: uh.. do i know you?")
 	sleeps(2)
-	fmt.Println(name + ": Yea! I'm the guy you met today, haha.")
+	pl(name + ": Yea! I'm the guy you met today, haha.")
 	sleeps(2)
-	fmt.Println("cmyui: huh?")
+	pl("cmyui: huh?")
 	sleeps(2)
-	fmt.Println("uh.. what do i say.. the guy from irl?")
+	pl("uh.. what do i say.. the guy from irl?")
 	sleeps(2)
-	fmt.Println(name + ": The guy you met irl like 20 minutes ago or so. I decided i'd just message you on here since you didn't reply on discord")
+	pl(name + ": The guy you met irl like 20 minutes ago or so. I decided i'd just message you on here since you didn't reply on discord")
 	sleeps(2)
-	fmt.Println("cmyui: uh.. i think you might have the wrong person, i haven't left my room today lmao")
+	pl("cmyui: uh.. i think you might have the wrong person, i haven't left my room today lmao")
 	sleeps(4)
-	fmt.Println("...")
+	pl("...")
 	sleeps(1)
-	fmt.Println("Huh? how is this not him?")
+	pl("Huh? how is this not him?")
 	sleepm(1500)
-	fmt.Println("cmyui: Also.. the person on discord was me aswell, I think you might have the wrong username or something?")
+	pl("cmyui: Also.. the person on discord was me aswell, I think you might have the wrong username or something?")
 	sleepm(500)
-	fmt.Println("cmyui: actually wait no, because discord has a # ID, how'd you manage to find my osu name AND discord id wtf")
+	pl("cmyui: actually wait no, because discord has a # ID, how'd you manage to find my osu name AND discord id wtf")
 	sleeps(3)
-	fmt.Println("... What? Did the guy give me someone elses ID or something..?")
+	pl("... What? Did the guy give me someone elses ID or something..?")
 	sleeps(1)
-	fmt.Println(name + ": Uhh.. Maybe the guy gave me someone elses ID..? Do you know a guy named Josh from Brampton?")
+	pl(name + ": Uhh.. Maybe the guy gave me someone elses ID..? Do you know a guy named Josh from Brampton?")
 	sleeps(2)
-	fmt.Println("cmyui: yea.. me..")
+	pl("cmyui: yea.. me..")
 	sleeps(1)
-	fmt.Println(name + ": Huh?")
+	pl(name + ": Huh?")
 	sleeps(2)
-	fmt.Println("cmyui: I'm a guy named Josh from brampton..")
+	pl("cmyui: I'm a guy named Josh from brampton..")
 	sleeps(5)
-	fmt.Println(name + ": wtf.. I think someone might be acting like they're you then..")
+	pl(name + ": wtf.. I think someone might be acting like they're you then..")
 	sleeps(3)
-	fmt.Println(name + ": wait, then why did you add me on discord first? I came home and you had already requested me as a friend..")
+	pl(name + ": wait, then why did you add me on discord first? I came home and you had already requested me as a friend..")
 	sleeps(5)
-	fmt.Println("He doesn't reply..")
+	pl("He doesn't reply..")
 	sleeps(2)
-	fmt.Println("I'm beyond confused at this point..")
+	pl("I'm beyond confused at this point..")
 	sleeps(2)
 	realEnd()
 }
@@ -451,14 +451,14 @@ var x int
 func realEnd() {
 	sleeps(3)
 	CallClear()
-	fmt.Println("Congratulations! You've reached the end of the game.. for now.. Feel free to contribute, or just tell cmyui you've reached this point,\nas theres only a few that have <3")
+	pl("Congratulations! You've reached the end of the game.. for now.. Feel free to contribute, or just tell cmyui you've reached this point,\nas theres only a few that have <3")
 	sleeps(10)
 	os.Exit(3)
 }
 func end() {
 	sleeps(3)
 	CallClear()
-	fmt.Println("Game Over")
+	pl("Game Over")
 	sleeps(10)
 	os.Exit(3)
 }
@@ -467,6 +467,12 @@ func sleeps(x int) {
 }
 func sleepm(x int) {
 	time.Sleep(time.Duration(x) * time.Millisecond)
+}
+func pl(x string) {
+	fmt.Println(x)
+}
+func p(x string) {
+	fmt.Print(x)
 }
 
 var clear map[string]func()
