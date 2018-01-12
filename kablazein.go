@@ -11,14 +11,14 @@ import (
 )
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	bytes, _, _ := reader.ReadLine()
 	fmt.Println("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
 	sleeps(10)
 	CallClear()
 	fmt.Println("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
 	sleepm(600)
 	var name string
+	reader := bufio.NewReader(os.Stdin)
+	bytes, _, _ := reader.ReadLine()
 	name = string(bytes)
 	fmt.Println(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
 
@@ -33,7 +33,8 @@ func main() {
 	sleepm(600)
 	var playOsuString string
 	fmt.Print(name + ": ")
-	playOsuString = string(bytes)
+	pos, _, _ := reader.ReadLine()
+	playOsuString = string(pos)
 	playOsuString = strings.ToLower(playOsuString)
 
 	if playOsuString[0] == 'y' {
@@ -44,7 +45,8 @@ func main() {
 		sleepm(600)
 		var playOsu string
 		fmt.Print(name + ": ")
-		playOsuString = string(bytes)
+		po, _, _ := reader.ReadLine()
+		playOsu = string(po)
 		playOsu = strings.ToLower(playOsu)
 
 		if playOsu[0] == 'y' {
@@ -72,7 +74,8 @@ func main() {
 	fmt.Print(name + ": ")
 	var favourite string
 	var kill bool
-	favourite = string(bytes)
+	fa, _, _ := reader.ReadLine()
+	favourite = string(fa)
 	favourite = strings.ToLower(favourite)
 	sleeps(1)
 	switch favourite {
@@ -169,7 +172,8 @@ func main() {
 	sleepm(300)
 	fmt.Print(name + ": ")
 	var akatsuki string
-	akatsuki = string(bytes)
+	a, _, _ := reader.ReadLine()
+	akatsuki = string(a)
 	akatsuki = strings.ToLower(akatsuki)
 
 	if akatsuki[0] == 'y' {
@@ -200,7 +204,8 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var interesting string
-	interesting = string(bytes)
+	in, _, _ := reader.ReadLine()
+	interesting = string(in)
 	interesting = strings.ToLower(interesting)
 
 	if interesting[0] == 'y' {
@@ -209,7 +214,8 @@ func main() {
 		sleepm(600)
 		print(name + ": ")
 		var blabla string
-		blabla = string(bytes)
+		bb, _, _ := reader.ReadLine()
+		blabla = string(bb)
 		blabla = strings.ToLower(blabla)
 
 		if blabla[0] == 'n' {
@@ -292,7 +298,8 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var haveDiscord string
-	haveDiscord = string(bytes)
+	hd, _, _ := reader.ReadLine()
+	haveDiscord = string(hd)
 	haveDiscord = strings.ToLower(haveDiscord)
 
 	if haveDiscord[0] == 'y' {
@@ -310,7 +317,8 @@ func main() {
 	}
 	var discord string
 	fmt.Print(name + "Yea sure, mines: ")
-	discord = string(bytes)
+	d, _, _ := reader.ReadLine()
+	discord = string(d)
 	discord = strings.ToLower(discord)
 	switch discord {
 	case "cmyui#5585":
