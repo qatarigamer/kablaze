@@ -250,28 +250,34 @@ func main() {
 	sleepm(600)
 	fmt.Print(name + ": ")
 	var rank int
+	var digit int
 	fmt.Scanln(&rank)
 	if rank >= 100000 {
+		digit = 6
 		sleepm(400)
 		fmt.Println("Josh: Oh, so you're still pretty new to the game then!")
 		sleepm(1200)
 		fmt.Println("Josh: I remember when I was that rank.. I first got my tablet right around 250k, haha")
 	} else if rank > 10000 {
+		digit = 5
 		sleepm(400)
 		fmt.Println("Josh: Oh. So you've been playing for a bit, I guess. Still pretty new though, haha.")
 		sleepm(1200)
 		fmt.Println("Josh: You'll probably start to see a slowdown in progress around the rank you're at now though. That's when it starts to actually get difficult..")
 	} else if rank >= 3000 {
+		digit = 4
 		sleepm(400)
 		fmt.Println("Josh: Oh damn.. You're catching up to me.. I got banned at about 2.9k, but that was after 2 cheated plays.. In reality i'm probably around there now.")
 		sleepm(1200)
 		fmt.Println("Josh: Best of lucking kicking my ass, haha.")
 	} else if rank >= 1000 {
+		digit = 4
 		sleepm(400)
 		fmt.Println("Josh: Oh damn, you're a bit further than I am then..")
 		sleepm(1200)
 		fmt.Println("Josh: We might actually be able to compete, I'll be sure to try to snipe some of your scores, haha")
 	} else if rank >= 100 {
+		digit = 3
 		sleepm(400)
 		fmt.Println("Josh: Oh wow.. You're really good damn. I hope I'll reach that sort of level one day..")
 		sleepm(1200)
@@ -281,6 +287,7 @@ func main() {
 		fmt.Println("Jo�h: ?  ????????? ? ?       ????????????  ?  ? ? ???\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? �?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? �?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? ?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? ?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?\n???????????? ? ??  ?? ?    ????? ??  ?\n????? ?? ?? ? ?? ? ?        ?????????  ??? ?\n ?? ??          ??? ?     ?? ??? ? ?\n? ?  ? ? ??????? ? ?? ? ?? ? ?? ? ? \n ? ? ?? ?   ????? ?  ?? ? ? ? ? ? ?? ?")
 		end()
 	} else if rank >= 20 {
+		digit = 2
 		sleepm(400)
 		fmt.Println("Josh: Bro im finna smash ur ass like grass at ANIME NORTH CON 2018 :^)")
 	} else {
@@ -352,6 +359,87 @@ func main() {
 	fmt.Println("I open my door, take a seat and turn on my PC.")
 	sleeps(1)
 	fmt.Println("Mmm.. It's been a long day..")
+	sleeps(2)
+	fmt.Println("Discord opens up, and I head to the Friends section, and see that cmyui#5585 has already added me as a friend.")
+	sleeps(2)
+	fmt.Println("I accept the request, and send him a PM saying 'Hey, long time no see, haha'")
+	sleeps(3)
+	fmt.Println("5 minutes passes, and still no reply.. I assume he must be busy doing something, so I open up osu!")
+	sleeps(2)
+	switch digit {
+	case 6:
+		fmt.Println("I've really been improving recently, even though im only a 6 digit, I think that I might be able to climb again now..")
+	case 5:
+		fmt.Println("I've really been improving recently, even though im only a 5 digit, I think that I might be able to climb again now..")
+	case 4:
+		fmt.Println("I've really been improving recently, even though im a 4 digit, I think that I might be able to climb again now..")
+	case 3:
+		fmt.Println("I've really been improving recently, even though im already decent.. I think that I might be able to climb again now..")
+	case 2:
+		fmt.Println("I've really been improving recently, even though im already so high in the rankings.. I think that I might be able to climb again now..")
+	}
+	sleeps(2)
+	fmt.Println("osu! boots up, and I realize that I never actually got to know how good Josh was..")
+	sleeps(2)
+	fmt.Println("I hit F9 and search up his name, and sure enough, there he is. A 4 digit, rank #3482.")
+	sleeps(2)
+	switch digit {
+	case 6:
+		fmt.Println("Wow, what the hell? He's really good!")
+	case 5:
+		fmt.Println("Wow.. That's really good..")
+	case 4:
+		fmt.Println("Oh, so we're around the same skill. Neat.")
+	case 3:
+		fmt.Println("Oh, he's a bit worse than I am, haha.")
+	case 2:
+		fmt.Println("Oh, he's decent I guess..")
+	}
+	sleeps(2)
+	//Oh maybe I'll make this something identity theft something something idk im winging this while writing it.
+	fmt.Println("Hes playing a song, I guess that's why he didnt reply on discord.. Although that song is only a minute long.. weird..")
+	sleeps(2)
+	fmt.Println("I send him a PM ingame")
+	sleeps(2)
+	fmt.Println(name + ": Hey!")
+	sleeps(2)
+	fmt.Println("cmyui: uh.. do i know you?")
+	sleeps(2)
+	fmt.Println(name + ": Yea! I'm the guy you met today, haha.")
+	sleeps(2)
+	fmt.Println("cmyui: huh?")
+	sleeps(2)
+	fmt.Println("uh.. what do i say.. the guy from irl?")
+	sleeps(2)
+	fmt.Println(name + ": The guy you met irl like 20 minutes ago or so. I decided i'd just message you on here since you didn't reply on discord")
+	sleeps(2)
+	fmt.Println("cmyui: uh.. i think you might have the wrong person, i haven't left my room today lmao")
+	sleeps(4)
+	fmt.Println("...")
+	sleeps(1)
+	fmt.Println("Huh? how is this not him?")
+	sleepm(1500)
+	fmt.Println("cmyui: Also.. the person on discord was me aswell, I think you might have the wrong username or something?")
+	sleepm(500)
+	fmt.Println("cmyui: actually wait no, because discord has a # ID, how'd you manage to find my osu name AND discord id wtf")
+	sleeps(3)
+	fmt.Println("... What? Did the guy give me someone elses ID or something..?")
+	sleeps(1)
+	fmt.Println(name + ": Uhh.. Maybe the guy gave me someone elses ID..? Do you know a guy named Josh from Brampton?")
+	sleeps(2)
+	fmt.Println("cmyui: yea.. me..")
+	sleeps(1)
+	fmt.Println(name + ": Huh?")
+	sleeps(2)
+	fmt.Println("cmyui: I'm a guy named Josh from brampton..")
+	sleeps(5)
+	fmt.Println(name + ": wtf.. I think someone might be acting like they're you then..")
+	sleeps(3)
+	fmt.Println(name + ": wait, then why did you add me on discord first? I came home and you had already requested me as a friend..")
+	sleeps(5)
+	fmt.Println("He doesn't reply..")
+	sleeps(2)
+	fmt.Println("I'm beyond confused at this point..")
 	sleeps(2)
 	realEnd()
 }
