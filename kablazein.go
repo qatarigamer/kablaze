@@ -25,6 +25,7 @@ func main() {
 	pl("??: Awesome, thanks")
 	sleeps(2)
 	pl("He sits down beside you.. He's quite sweaty and looks like he just finished his run..")
+	td()
 	sleeps(2)
 	pl("??: Oh, sorry for not introducing myself. I'm Josh..")
 	pl("He extends his hand, and it takes me a second to react")
@@ -41,7 +42,7 @@ func main() {
 		CallClear()
 		sleeps(1)
 		pl("F͍̖̣̿̃ͅͅͅÙ̖C̜̯̤̗̓ͤ̉͆ͅͅK̝͓ͪͮ ͖̓ͧ̋O͓̺̟̜̦̽ͣ͗́̀̚F̥̘͖ͯͩ̀̑͑̓̚F̝͑͑ͪ̇̊͌ͥ ̰̇A̫͍̠͙͚̟N̳͓̟͖̎̊ͅD͇̼̠̱̱̩̙̈̓ͣ̏ ̪̗ͫ̅Nͣ̌ͬͬ̔̈E͕̱͚̗̠̠ͨ͑̀̉̌V̫͖̲̟̹͖E̬͕͕͈R͎͉ ̤̹̙̲R̪̳ͯ͛̃ͦ̎ͫ̌E̖̝͈̱͈̫͓͑ͪ̓ͬͨ̊T̬͓͖͓̠̗͎̔̃U̖ͧ̄̔R̤̰̼͎͆̇̋ͧ̒̿ͯNͮ̉")
-		sleems(500)
+		sleepm(500)
 		end()
 	}
 	pl(name + ": Nice to meet you too!")
