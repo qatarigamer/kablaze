@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 	"os/exec"
 	"runtime"
@@ -11,26 +12,32 @@ import (
 )
 
 func main() {
-	pl("Hello! Welcome to my crappy little game. It's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 10 seconds")
-	sleeps(10)
+	pl("Hello! Welcome to my little Go game.\nIt's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 5 seconds..")
+	sleeps(5)
 	CallClear()
-	pl("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos. \nA man in a hoodie and slick black sweatpants approaches you.")
-	sleeps(4)
+	pl("You're sitting on an old park bench in Gage Park in Brampton, Ontario. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos.\nA man in a hoodie and slick black sweatpants approaches you..")
+	td()
+	sleeps(5)
+	p(".")
 	pl("??: Hey dude! Nice to meet you! I'm Josh, what's your name?")
 	sleepm(600)
 	var name string
+	var nameLower string
 	reader := bufio.NewReader(os.Stdin)
 	bytes, _, _ := reader.ReadLine()
 	name = string(bytes)
 	pl(name + ": Hey.. I'm " + name + ". Nice to meet you too!")
 
-	if name == "josh" && name == "Josh" {
+	nameLower = strings.ToLower(name)
+	if nameLower == "josh" {
+		td()
 		sleepm(1400)
 		pl("F͍̖̣̿̃ͅͅͅÙ̖C̜̯̤̗̓ͤ̉͆ͅͅK̝͓ͪͮ ͖̓ͧ̋O͓̺̟̜̦̽ͣ͗́̀̚F̥̘͖ͯͩ̀̑͑̓̚F̝͑͑ͪ̇̊͌ͥ ̰̇A̫͍̠͙͚̟N̳͓̟͖̎̊ͅD͇̼̠̱̱̩̙̈̓ͣ̏ ̪̗ͫ̅Nͣ̌ͬͬ̔̈E͕̱͚̗̠̠ͨ͑̀̉̌V̫͖̲̟̹͖E̬͕͕͈R͎͉ ̤̹̙̲R̪̳ͯ͛̃ͦ̎ͫ̌E̖̝͈̱͈̫͓͑ͪ̓ͬͨ̊T̬͓͖͓̠̗͎̔̃U̖ͧ̄̔R̤̰̼͎͆̇̋ͧ̒̿ͯNͮ̉")
 		end()
 	}
 
 	sleeps(1)
+	td()
 	pl("Josh: Mm.. Have you ever heard of a game called osu?")
 	sleepm(600)
 	var playOsuString string
@@ -41,7 +48,7 @@ func main() {
 
 	if playOsuString[0] == 'y' {
 		sleeps(1)
-		pl("Josh: Oh wow, really?")
+		pl("Josh: Wait.. Seriously? ")
 		sleeps(2)
 		pl("Josh: Do you actually play the game?")
 		sleepm(600)
@@ -84,6 +91,7 @@ func main() {
 	case "kablaze":
 		kill = false
 		sleeps(1)
+		td()
 		pl("Josh: Wait.. what?")
 		sleeps(2)
 		pl("Josh: Really..?")
@@ -135,6 +143,7 @@ func main() {
 		sleeps(4)
 	}
 	if kill == true {
+		td()
 		pl("Josh: Actually what the fuck? How do you not appreciate any good players?")
 		sleeps(3)
 		pl("I literally have no idea who you're even talking about. What the hell is wrong with you??")
@@ -160,17 +169,21 @@ func main() {
 	}
 
 	sleeps(2)
+	td()
 	pl("Josh: To be honest, i'm amazed you've made it this far..")
+	td()
 	sleeps(2)
 	pl(name + ": What?")
 	sleeps(2)
-	pl("Josh: mm.. Nothing.. It's almost like you're trying to read my mind is all..")
+	pl("Josh: Nothing.. It's almost like..")
 	sleeps(2)
+	pl("Josh: You're trying to read my mind..")
 	pl(name + ": Uh.. Sorry I'm not sure I know what you're talking about..")
 	sleeps(2)
-	pl("Josh: heh... Of course not..")
+	pl("Josh: Heh... Of course not..")
 	sleeps(4)
-	pl("Josh: Have you ever heard of Akatsuki?")
+	td()
+	pl("Josh: Um.. Have you ever heard of Akatsuki then?")
 	sleepm(300)
 	p(name + ": ")
 	var akatsuki string
@@ -182,12 +195,13 @@ func main() {
 		sleeps(2)
 		pl("Josh: Yea.. It's been getting quite a lot of attention recently..")
 		sleeps(2)
-		pl("I'm actually the creator of it.. haha")
+		pl("I'm actually the creator of it..")
 		sleeps(2)
 		pl(name + ": Oh dude, thats kind of cool.. although.. isnt it litrally just ripples code..?")
+		dotspam()
 		sleeps(2)
 		pl("Josh: �.")
-		sleeps(4)
+		sleeps(3)
 		pl("Jos�̡̢̡̝̥͇̠̗͖̙̹̥̩̣̻̞͎̜̹͇̻͚̖̭̖̟̼ͅh̨̢̨̨̭̞̖̲̝̭̠̜̳͔̱̫̞̼̠̖͎͎̠̰̦̦̬̭:̡̺̰̲̣̲̼̲̖͔̗̞̲͇͈̖̠̯̜̲̮̦̼̹̻̠̱ͅ ̡̧̢̢̟̩͈̞̳̙͔͔̜͓̼̥̭̝̘͔͓̝̻̪̯̯̹ͅI̧̻̯͍̜͓͈̹͖̰̬̪̹͇̱̝̣̥̠͙̣͉̲̠̺̠̲ͅ'̨̧̢̢̡̨̡̙̟̙̳̥͓͎̼̩̰̠̟̞̗͍̺͙̪̬̝ͅm̢̡̧̨̩̜̠̝̱͕̲̦͇̰̬͎͙̠̱̼̹̯̥̘̰͈̥̣ ̡̡̹͓̥̙̣̙͈͈̘̠̣̰̞͈͎̲̩̣̼͎̝̳̣͍͜ͅs̢̢̫̜̘͖̞̫̩̩̟̻͔̻̙̼̜͓̭̜͔̬͕̣͜͜ͅͅo̡̢̨̲̼͉͇̟͖̯̰͉̦͍̻͓̜̻̫͇͍͖̮̰͍̯͚͜ŗ̥͉̜̩̰͉̩̼͖̮̱̻͍̩͎̮͔͕̲͈̹͇̦̪ͅͅ    rRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-")
 		end()
 	} else {
@@ -448,6 +462,30 @@ func main() {
 
 var x int
 
+func td() {
+	sleepm(750)
+	p(".")
+	sleepm(750)
+	p(".")
+	sleepm(750)
+	p(".\n")
+}
+func dotspam() {
+	p(".")
+	sleepm(750)
+	p(".")
+	sleepm(750)
+	p(".")
+	sleepm(750)
+	p(".")
+	var count int
+	count = 0
+	for count < 100 {
+		p(".")
+		sleepm(5)
+		count++
+	}
+}
 func realEnd() {
 	sleeps(3)
 	CallClear()
@@ -458,7 +496,15 @@ func realEnd() {
 func end() {
 	sleeps(3)
 	CallClear()
-	pl("Game Over")
+	pl("An Error has Occurred")
+	pl("Please check err.log for more information")
+	file, err := os.Create("err.log")
+	if err != nil {
+		//If we can't write the file for any reason, just display it in console I guess
+		log.Fatal("L̨̤͉̖̹̟̲͖͇̤̪͕̤̤̠̥ͨ̔ͮͤͥͭ͑ͧͭ̑̊̈́ͨ̿͐̚É̵̢͔̟͕̝̹͎͚͎͈̳̔̇̃ͩ͝A̵̯̜̬̖͙ͥ́ͪͦ͊̍ͨ͆V̡ͩ̔̾͗̚͟҉̭̝̱̣̥̥̗̱̪͓͕͈̯͙͈͖Ĕ̛̦̗̫̟̖̦̞̠̙̝͉̖̦̤̻̏ͬͫͯ́̂͋̃̑̀͞ ̵̮̠̠̂̈ͨ͗̑̅͞Ä͇̙͕̲̪̭͕̮͚͈̭͍̫̖̺͙͚́͆̑ͭ́̒̎͘͜͡ͅN̎͒ͭͨ̊ͤ͌ͤ͑ͮ̐͆͡҉̹̲̯͘D̷ͭ͋̌̒͋ͣ͒ͩ̾̃̌̽̀ͫͦ͞҉̯̳̫̺̳̞̹̖̜̖ ̷̢̡̱͉̲͔̻̙̳̜̳͑̿̍͗͌ͦͬͨ̂͋̉̌͠N̵̛̲̟̦̠̟̻̲̯̲̦̝͍̳̣̳̺̤ͪ͐͛͆ͣ͒ͤ̊̍͊̊̓ͥ̈ͬ͒̈́ͬ̀͘̕ͅȄ̶̺̠̞̹̱̯̘̘͖̥̗̔̏̑͐̃̅͗͊͗̌̄̈́̿ͪ̀̕͘V́͆ͮ̔͂̔̉̌̋͐̀͟͝͏̺̬̘͕͙̫̺̫̜̗̘̝̼̫̺̫̹̞͘E̟̻͉͓̣̰͓̮̫̎̐͊̂̆̉ͩ͛̌̐́̅͊̐ͨ̊̀ͫ̀ͅR̸̴̨̈́͂ͣͨͤ̐̇̑ͯͫ̓ͭ́ͦ͐͡҉̩͙̼ͅ ̸̢͓̱͎̥̱̺͚̎͐̈́́̊ͮ͛̀̈̅̎́ͫ̌ͭ̒͆́̚͞͞R̸̵͚̯͇̹̹̟̖͖̞͓̯͚͔̆̈́̆̆̍͡Ḗ̞͖̮̣̒̓̿̓ͪ̀̈́͌̂͆ͦͤ̐͌ͥ́͟͡T̷̵͉̪̼̗̼̭̙̲̖̰̤̲͍͕̥̱̅ͩ̇ͪ͌ͭ͌ͩ̆͒̀ͅƯ̯̞̜͎̣͈̻̠͈̦̠͚͋ͥͮ͐́ͬ͌ͥ̐ͨ͗̓̔͑͝R̷̨̧̎̃̓̏̋̂ͩ̾̓ͥ̍ͫ͒̊̈̓̆̑҉̹̲̝̜͎̠̥̣̥̭̪͎̙̖͎̟̳N̷̙̖̮̩̭̪̜͉̝͙̤̫̲̮̘͇̙̺̝̑ͯͥͮ̑̓͆̒̚", err)
+	}
+	defer file.Close()
+	fmt.Fprintf(file, "L̨̤͉̖̹̟̲͖͇̤̪͕̤̤̠̥ͨ̔ͮͤͥͭ͑ͧͭ̑̊̈́ͨ̿͐̚É̵̢͔̟͕̝̹͎͚͎͈̳̔̇̃ͩ͝A̵̯̜̬̖͙ͥ́ͪͦ͊̍ͨ͆V̡ͩ̔̾͗̚͟҉̭̝̱̣̥̥̗̱̪͓͕͈̯͙͈͖Ĕ̛̦̗̫̟̖̦̞̠̙̝͉̖̦̤̻̏ͬͫͯ́̂͋̃̑̀͞ ̵̮̠̠̂̈ͨ͗̑̅͞Ä͇̙͕̲̪̭͕̮͚͈̭͍̫̖̺͙͚́͆̑ͭ́̒̎͘͜͡ͅN̎͒ͭͨ̊ͤ͌ͤ͑ͮ̐͆͡҉̹̲̯͘D̷ͭ͋̌̒͋ͣ͒ͩ̾̃̌̽̀ͫͦ͞҉̯̳̫̺̳̞̹̖̜̖ ̷̢̡̱͉̲͔̻̙̳̜̳͑̿̍͗͌ͦͬͨ̂͋̉̌͠N̵̛̲̟̦̠̟̻̲̯̲̦̝͍̳̣̳̺̤ͪ͐͛͆ͣ͒ͤ̊̍͊̊̓ͥ̈ͬ͒̈́ͬ̀͘̕ͅȄ̶̺̠̞̹̱̯̘̘͖̥̗̔̏̑͐̃̅͗͊͗̌̄̈́̿ͪ̀̕͘V́͆ͮ̔͂̔̉̌̋͐̀͟͝͏̺̬̘͕͙̫̺̫̜̗̘̝̼̫̺̫̹̞͘E̟̻͉͓̣̰͓̮̫̎̐͊̂̆̉ͩ͛̌̐́̅͊̐ͨ̊̀ͫ̀ͅR̸̴̨̈́͂ͣͨͤ̐̇̑ͯͫ̓ͭ́ͦ͐͡҉̩͙̼ͅ ̸̢͓̱͎̥̱̺͚̎͐̈́́̊ͮ͛̀̈̅̎́ͫ̌ͭ̒͆́̚͞͞R̸̵͚̯͇̹̹̟̖͖̞͓̯͚͔̆̈́̆̆̍͡Ḗ̞͖̮̣̒̓̿̓ͪ̀̈́͌̂͆ͦͤ̐͌ͥ́͟͡T̷̵͉̪̼̗̼̭̙̲̖̰̤̲͍͕̥̱̅ͩ̇ͪ͌ͭ͌ͩ̆͒̀ͅƯ̯̞̜͎̣͈̻̠͈̦̠͚͋ͥͮ͐́ͬ͌ͥ̐ͨ͗̓̔͑͝R̷̨̧̎̃̓̏̋̂ͩ̾̓ͥ̍ͫ͒̊̈̓̆̑҉̹̲̝̜͎̠̥̣̥̭̪͎̙̖͎̟̳N̷̙̖̮̩̭̪̜͉̝͙̤̫̲̮̘͇̙̺̝̑ͯͥͮ̑̓͆̒̚")
 	sleeps(10)
 	os.Exit(3)
 }
@@ -496,5 +542,11 @@ func CallClear() {
 		value()
 	} else {
 		panic("Woops.. The screen was supposed to be cleared here, but it seems your OS is unsupported. Sorry about that >.>")
+	}
+}
+
+func check(e error) {
+	if e != nil {
+		panic(e)
 	}
 }
