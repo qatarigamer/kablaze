@@ -140,7 +140,8 @@ func main() {
 		"_index", "index", "karthy", "yaong", "digitalhypno", "toy", "aireu",
 		"wubwoofwolf", "talala", "resia", "adamqs", "wilchq", "mouseeasy",
 		"flyingtuna", "thepoon", "recia", "dumii", "mlaw22", "mlaw", "mshake",
-		"xilver", "ceptin", "plz enjoy game", "apraxia", "doomsday":
+		"xilver", "ceptin", "plz enjoy game", "apraxia", "doomsday", "vaxei",
+		"filsdelama", "dustice":
 		kill = false
 		pl("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
 		sleeps(1)
