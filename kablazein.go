@@ -546,7 +546,7 @@ func CallClear() {
 	if ok {
 		value()
 	} else {
-		panic("Woops.. The screen was supposed to be cleared here, but it seems your OS is unsupported. Sorry about that.")
+		panic("The screen was supposed to be cleared here, but it seems your OS is unsupported. Sorry about that.")
 	}
 }
 
