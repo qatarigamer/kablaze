@@ -117,7 +117,7 @@ func main() {
 	case "chase":
 		kill = false
 		pl("Josh: <3")
-	case "rafis", "azerite", "zirba", "hvick", "hvick225", "bubbleman",
+	case "rafis", "azerite", "zirba", "bubbleman",
 		"rohulk", "angelsim", "emilia", "woey", "osu player84", "mathi",
 		"totoki", "_ryuk", "ryuk", "mcy3", "spare", "danyl", "piggey",
 		"bro_gamer72", "gayz", "gayzmcgee", "dustice", "idke", "happystick",
@@ -132,6 +132,11 @@ func main() {
 	case "rrtyui":
 		kill = false
 		pl("Josh: Meh.. Irrelevant trash player, but i'll let it slide..")
+	case "hvick", "hvick225":
+		kill = false
+		pl("Josh: Yea, I can't blame you for that. She's extremely talented. Although..")
+		sleeps(1)
+		pl("Josh: She's not my favourite, but she's definitely up there.")
 	default:
 		kill = true
 		sleeps(1)
